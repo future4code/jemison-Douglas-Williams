@@ -49,7 +49,7 @@ function calculaIMC(peso, altura) {
   let alturaNum = Number(altura)
 
   const imc = pesoNum / (alturaNum * alturaNum)
-   return(imc)
+  return(imc)
 
 }
 
@@ -65,15 +65,15 @@ function imprimeInformacoesUsuario() {
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
-    const cor1 = prompt("Uma cor favorita:")
-    const cor2 = prompt("Outra cor favorita:")
-    const cor3 = prompt("Ultima cor favorita:")
+  const cor1 = prompt("Uma cor favorita:")
+  const cor2 = prompt("Outra cor favorita:")
+  const cor3 = prompt("Ultima cor favorita:")
 
-    const listaCores = [
+  const listaCores = [
       cor1,
       cor2,
       cor3,
-    ]
+  ]
 
     console.log(listaCores)
 }
@@ -88,49 +88,73 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
-  // implemente sua lógica aqui
+  const ingressosVendidos = custo / valorIngresso
 
+  return ingressosVendidos
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
-  // implemente sua lógica aqui
+  return string1.length == string2.length
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
-  // implemente sua lógica aqui
+  return array[0]
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  // implemente sua lógica aqui
+  return(array[array.length - 1])
 
 }
-
+  
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  let primeiroItem = array[0]
+  let ultimoItem = array[array.length - 1]
+  
+  array.unshift(ultimoItem)
+  array.pop()
+  array.push(primeprimeiroItemroItem)
+  array.splice(1,1)
 
+
+  console.log(array)
+  return array
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
-  // implemente sua lógica aqui
+  return string1.toLowerCase() == string2.toLowerCase()
 
+  console.log(string1, string2)
+  // return string1 === string2
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
-  // implemente sua lógica aqui
+  let anoAtual = Number(prompt("Em que ano estamos?"))
+  let anoNascimento = Number(prompt("Em que ano você nasceu?"))
+  let anoDeEmissaoRg = Number(prompt("Quando foi emitida a sua identidade?"))
+  let idade = anoAtual - anoNascimento
+
+  let emissaoRg1 = anoAtual - anoDeEmissaoRg
+  let emissaoRg2 = anoAtual - anoDeEmissaoRg
+  let emissaoRg3 = anoAtual - anoDeEmissaoRg
+
+  let result = idade <= 20 && emissaoRg1 >= 5 || idade > 20 && idade <= 50 && emissaoRg2 >= 10 || idade > 50 && emissaoRg3 >= 15
+
+
+  console.log(result)
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-  // implemente sua lógica aqui
+  
 
 }
 
