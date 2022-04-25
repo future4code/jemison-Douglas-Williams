@@ -118,7 +118,7 @@ function trocaPrimeiroEUltimo(array) {
   
   array.unshift(ultimoItem)
   array.pop()
-  array.push(primeprimeiroItemroItem)
+  array.push(primeiroItem)
   array.splice(1,1)
 
 
