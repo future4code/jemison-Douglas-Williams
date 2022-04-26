@@ -49,8 +49,7 @@ function calculaIMC(peso, altura) {
   let alturaNum = Number(altura)
 
   const imc = pesoNum / (alturaNum * alturaNum)
-   return(imc)
-
+  return(imc)
 }
 
 // EXERCÍCIO 04
@@ -65,6 +64,17 @@ function imprimeInformacoesUsuario() {
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
+
+  const cor1 = prompt("Uma cor favorita:")
+  const cor2 = prompt("Outra cor favorita:")
+  const cor3 = prompt("Ultima cor favorita:")
+
+  const listaCores = [
+      cor1,
+      cor2,
+      cor3,
+  ]
+=======
     const cor1 = prompt("Uma cor favorita:")
     const cor2 = prompt("Outra cor favorita:")
     const cor3 = prompt("Ultima cor favorita:")
@@ -74,7 +84,6 @@ function imprimeTresCoresFavoritas() {
       cor2,
       cor3,
     ]
-
     console.log(listaCores)
 }
 
@@ -88,24 +97,53 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
+
+  const ingressosVendidos = custo / valorIngresso
+
+  return ingressosVendidos
   // implemente sua lógica aqui
 
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
+
+  return string1.length == string2.length
+
   // implemente sua lógica aqui
+
 
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
+
+  return array[0]
   // implemente sua lógica aqui
+
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
+
+  return(array[array.length - 1])
+
+}
+  
+// EXERCÍCIO 11
+function trocaPrimeiroEUltimo(array) {
+  let primeiroItem = array[0]
+  let ultimoItem = array[array.length - 1]
+  
+  array.unshift(ultimoItem)
+  array.pop()
+  array.push(primeprimeiroItemroItem)
+  array.splice(1,1)
+
+
+  console.log(array)
+  return array
   // implemente sua lógica aqui
 
 }
@@ -114,22 +152,44 @@ function retornaUltimoElemento(array) {
 function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
+
+  return string1.toLowerCase() == string2.toLowerCase()
+
+  console.log(string1, string2)
+  // return string1 === string2
   // implemente sua lógica aqui
 
 }
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
+
+  let anoAtual = Number(prompt("Em que ano estamos?"))
+  let anoNascimento = Number(prompt("Em que ano você nasceu?"))
+  let anoDeEmissaoRg = Number(prompt("Quando foi emitida a sua identidade?"))
+  let idade = anoAtual - anoNascimento
+
+  let emissaoRg1 = anoAtual - anoDeEmissaoRg
+  let emissaoRg2 = anoAtual - anoDeEmissaoRg
+  let emissaoRg3 = anoAtual - anoDeEmissaoRg
+
+  let result = idade <= 20 && emissaoRg1 >= 5 || idade > 20 && idade <= 50 && emissaoRg2 >= 10 || idade > 50 && emissaoRg3 >= 15
+
+
+  console.log(result)
   // implemente sua lógica aqui
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
+
+  
   // implemente sua lógica aqui
 
 }
