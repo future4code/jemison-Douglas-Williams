@@ -69,12 +69,27 @@ function imprimeTresCoresFavoritas() {
   const cor2 = prompt("Outra cor favorita:")
   const cor3 = prompt("Ultima cor favorita:")
 
+  const cor1 = prompt("Uma cor favorita:")
+  const cor2 = prompt("Outra cor favorita:")
+  const cor3 = prompt("Ultima cor favorita:")
+
+  const listaCores = [
+      cor1,
+      cor2,
+      cor3,
+  ]
+    const cor1 = prompt("Uma cor favorita:")
+    const cor2 = prompt("Outra cor favorita:")
+    const cor3 = prompt("Ultima cor favorita:")
+
   const listaCores = [
       cor1,
       cor2,
       cor3,
   ]
 
+=======
+    ]
     console.log(listaCores)
 }
 
@@ -90,6 +105,11 @@ function retornaStringEmMaiuscula(string) {
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   const ingressosVendidos = custo / valorIngresso
 
+  const ingressosVendidos = custo / valorIngresso
+
+  return ingressosVendidos
+  // implemente sua lógica aqui
+
   return ingressosVendidos
 }
 
@@ -97,17 +117,47 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 function checaStringsMesmoTamanho(string1, string2) {
   return string1.length == string2.length
 
+  return string1.length == string2.length
+
+  // implemente sua lógica aqui
+
+
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   return array[0]
+=======
+
+  return array[0]
+  // implemente sua lógica aqui
+
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
   return(array[array.length - 1])
+=======
+
+  return(array[array.length - 1])
+
+}
+  
+// EXERCÍCIO 11
+function trocaPrimeiroEUltimo(array) {
+  let primeiroItem = array[0]
+  let ultimoItem = array[array.length - 1]
+  
+  array.unshift(ultimoItem)
+  array.pop()
+  array.push(primeprimeiroItemroItem)
+  array.splice(1,1)
+
+
+  console.log(array)
+  return array
+  // implemente sua lógica aqui
 
 }
   
@@ -124,11 +174,18 @@ function trocaPrimeiroEUltimo(array) {
 
   console.log(array)
   return array
+
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
   return string1.toLowerCase() == string2.toLowerCase()
+
+  return string1.toLowerCase() == string2.toLowerCase()
+
+  console.log(string1, string2)
+  // return string1 === string2
+  // implemente sua lógica aqui
 
   console.log(string1, string2)
   // return string1 === string2
@@ -136,6 +193,7 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
 
 // EXERCÍCIO 13
 function checaRenovacaoRG() {
+
   let anoAtual = Number(prompt("Em que ano estamos?"))
   let anoNascimento = Number(prompt("Em que ano você nasceu?"))
   let anoDeEmissaoRg = Number(prompt("Quando foi emitida a sua identidade?"))
@@ -147,14 +205,14 @@ function checaRenovacaoRG() {
 
   let result = idade <= 20 && emissaoRg1 >= 5 || idade > 20 && idade <= 50 && emissaoRg2 >= 10 || idade > 50 && emissaoRg3 >= 15
 
-
   console.log(result)
+  // implemente sua lógica aqui
 
 }
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-  
+  // implemente sua lógica aqui
 
 }
 
