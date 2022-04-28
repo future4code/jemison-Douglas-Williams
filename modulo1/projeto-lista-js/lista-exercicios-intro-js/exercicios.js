@@ -50,6 +50,7 @@ function calculaIMC(peso, altura) {
 
   const imc = pesoNum / (alturaNum * alturaNum)
   return(imc)
+
 }
 
 // EXERCÍCIO 04
@@ -64,6 +65,9 @@ function imprimeInformacoesUsuario() {
 
 // EXERCÍCIO 05
 function imprimeTresCoresFavoritas() {
+  const cor1 = prompt("Uma cor favorita:")
+  const cor2 = prompt("Outra cor favorita:")
+  const cor3 = prompt("Ultima cor favorita:")
 
   const cor1 = prompt("Uma cor favorita:")
   const cor2 = prompt("Outra cor favorita:")
@@ -74,15 +78,17 @@ function imprimeTresCoresFavoritas() {
       cor2,
       cor3,
   ]
-=======
     const cor1 = prompt("Uma cor favorita:")
     const cor2 = prompt("Outra cor favorita:")
     const cor3 = prompt("Ultima cor favorita:")
 
-    const listaCores = [
+  const listaCores = [
       cor1,
       cor2,
       cor3,
+  ]
+
+=======
     ]
     console.log(listaCores)
 }
@@ -97,16 +103,19 @@ function retornaStringEmMaiuscula(string) {
 
 // EXERCÍCIO 07
 function calculaIngressosEspetaculo(custo, valorIngresso) {
+  const ingressosVendidos = custo / valorIngresso
 
   const ingressosVendidos = custo / valorIngresso
 
   return ingressosVendidos
   // implemente sua lógica aqui
 
+  return ingressosVendidos
 }
 
 // EXERCÍCIO 08
 function checaStringsMesmoTamanho(string1, string2) {
+  return string1.length == string2.length
 
   return string1.length == string2.length
 
@@ -117,6 +126,8 @@ function checaStringsMesmoTamanho(string1, string2) {
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
+  return array[0]
+=======
 
   return array[0]
   // implemente sua lógica aqui
@@ -126,6 +137,8 @@ function retornaPrimeiroElemento(array) {
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
+  return(array[array.length - 1])
+=======
 
   return(array[array.length - 1])
 
@@ -147,16 +160,26 @@ function trocaPrimeiroEUltimo(array) {
   // implemente sua lógica aqui
 
 }
-
+  
 // EXERCÍCIO 11
 function trocaPrimeiroEUltimo(array) {
-  // implemente sua lógica aqui
+  let primeiroItem = array[0]
+  let ultimoItem = array[array.length - 1]
+  
+  array.unshift(ultimoItem)
+  array.pop()
+  array.push(primeiroItem)
+  array.splice(1,1)
 
+
+  console.log(array)
+  return array
 
 }
 
 // EXERCÍCIO 12
 function checaIgualdadeDesconsiderandoCase(string1, string2) {
+  return string1.toLowerCase() == string2.toLowerCase()
 
   return string1.toLowerCase() == string2.toLowerCase()
 
@@ -164,6 +187,8 @@ function checaIgualdadeDesconsiderandoCase(string1, string2) {
   // return string1 === string2
   // implemente sua lógica aqui
 
+  console.log(string1, string2)
+  // return string1 === string2
 }
 
 // EXERCÍCIO 13
@@ -180,7 +205,6 @@ function checaRenovacaoRG() {
 
   let result = idade <= 20 && emissaoRg1 >= 5 || idade > 20 && idade <= 50 && emissaoRg2 >= 10 || idade > 50 && emissaoRg3 >= 15
 
-
   console.log(result)
   // implemente sua lógica aqui
 
@@ -188,8 +212,6 @@ function checaRenovacaoRG() {
 
 // EXERCÍCIO 14
 function checaAnoBissexto(ano) {
-
-  
   // implemente sua lógica aqui
 
 }
