@@ -39,11 +39,11 @@ const usuarios1 = [
     })
     
     console.log(novoArrayC)
-//a) Vai imprimir um novo array com o nome e o apelido de todos os usuarios menos da
+// a) Vai imprimir um novo array com o nome e o apelido de todos os usuarios menos da
 // que possui o nome Chijo
 
             //Exercícios de escrita de código
-//1.
+1.
     const pets = [
         { nome: "Lupin", raca: "Salsicha"},
         { nome: "Polly", raca: "Lhasa Apso"},
@@ -58,24 +58,49 @@ const usuarios1 = [
     })
     console.log(novoArrayD)
 //b)
+    const novoArrayE = pets.filter((item, index, array) => {
+        return item.raca == "Salsicha"
+})
+
+console.log(novoArrayE)
+
 
 //c) 
-    const imprimeMenssagem = (valor) => {
-        console.log(`Você ganhou um cupom de desconto de 10% para tosar o/a ${valor}!`)
-    }
+    const novoArrayF = pets.filter((item, index, array) => {
+        return item.raca == "Poodle"
+    })
 
 
+    const novoArrayG = novoArrayF.map((item, index, array) => {
+            return `Você ganhou um cupom de desconto de 10% para tosar o/a ${item.nome}!`
+    
+    })
 
+console.log(novoArrayG)
 
+//2. 
+    const produtos = [
+        { nome: "Alface Lavada", categoria: "Hortifruti", preco: 2.5 },
+        { nome: "Guaraná 2l", categoria: "Bebidas", preco: 7.8 },
+        { nome: "Veja Multiuso", categoria: "Limpeza", preco: 12.6 },
+        { nome: "Dúzia de Banana", categoria: "Hortifruti", preco: 5.7 },
+        { nome: "Leite", categoria: "Bebidas", preco: 2.99 },
+        { nome: "Cândida", categoria: "Limpeza", preco: 3.30 },
+        { nome: "Detergente Ypê", categoria: "Limpeza", preco: 2.2 },
+        { nome: "Vinho Tinto", categoria: "Bebidas", preco: 55 },
+        { nome: "Berinjela kg", categoria: "Hortifruti", preco: 8.99 },
+        { nome: "Sabão em Pó Ypê", categoria: "Limpeza", preco: 10.80 }
+    ]
+//a)
+    const nomeProdutos = produtos.map((item, index, array) => {
+        return item.nome 
+    })
+    
+   console.log(nomeProdutos)
+//b) --
 
-
-
-
-
-
-
-
-
-
-
-
+//c) --
+    
+//d) --
+  
+//e) --
