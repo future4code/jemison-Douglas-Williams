@@ -1,0 +1,19 @@
+body {
+    background-color: aqua;
+  }
+
+#Mensagem {
+    font-size: 150px;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 80px 80px blue inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin: 10px 10px 0 auto;
+    padding: 10px 178px;
+}   
+
+#Mensagem:hover {
+    color: black;
+    box-shadow: 0 0 40px 0 blue inset, 0 0 40px 4px blue;
+}
