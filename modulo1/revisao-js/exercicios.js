@@ -18,14 +18,14 @@ function retornaArrayOrdenado(array) {
     const comparacao = (a, b) => {
         return a - b;
     }
-    return array.sort(comparacao);
+    return array.sort(comparacao)
 }
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
     const numerosPares = array.filter(number => {
         return number % 2 === 0 
-    });
+    })
 
     return numerosPares
 }
@@ -38,12 +38,19 @@ function retornaNumerosParesElevadosADois(array) {
         return number * number
     })
 
-   return numerosParesAoQuadrado
+    return numerosParesAoQuadrado
 }
 
 // EXERCÍCIO 06
 function retornaMaiorNumero(array) {
-  
+    let maior = 0
+    for (let i = 0; i < array.length; i++){
+        if(array[i] > maior){
+            maior = array[i]
+        }
+    }
+
+    return maior
 }
 
 // EXERCÍCIO 07
