@@ -23,14 +23,22 @@ function retornaArrayOrdenado(array) {
 
 // EXERCÍCIO 04
 function retornaNumerosPares(array) {
-    return array.filter(array[i] % 2 === 0)
+    const numerosPares = array.filter(number => {
+        return number % 2 === 0 
+    });
 
-    
+    return numerosPares
 }
 
 // EXERCÍCIO 05
 function retornaNumerosParesElevadosADois(array) {
- 
+    const numerosParesAoQuadrado = array.filter(number => {
+        return number % 2 === 0 
+    }).map(number => {
+        return number * number
+    })
+
+   return numerosParesAoQuadrado
 }
 
 // EXERCÍCIO 06
