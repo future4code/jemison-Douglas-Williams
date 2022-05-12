@@ -1,0 +1,37 @@
+Resolvendo_Problemas
+
+Se resume em 7 passos que devemos aplicar na resolução de desafios na programação.
+
+Como pessoas programadoras, seremos chamados quase sempre para resolver problemas 
+por meio de códigos, por isso sempre estaremos buscando soluções para estar resolvendo
+esses problemas. O Google é o melhor amigo do programador.
+
+Os 7 passos são fundamentais para resolução de um código, nos quais são:
+
+1º Passo:
+	Ter atenção no Enunciado, esse é o melhor momento de estar criando nossos comentários no código;
+
+2º Passo: 
+	 Onde tiramos as informações relevantes;
+
+3º Passo:
+	Pensar nas entradas e saídas ao ler o enunciado, criando uma função com elas;
+
+4º Passo: 
+	Fazer um esquema visual, através de floxogramas para entender melhor como resolver
+esse problema, pensando em possíveis cenários e colocando inputs e outputs;
+
+5º Passo:
+	Criar um código feio com todas as informações já visualizadas e destacadas no enunciado,
+Escrevendo todas as soluções possíveis, e testar cada solução até ter a resposta solicitada.
+
+6º Passo:
+	Testar o código freio, chamado de teste de força bruta, uma solução óbvia e pouco
+perfomática, pode ser escrito no nosso idioma e depois transcrito para a linguagem de programação desejada;
+
+7º Passo:
+	Refatoramos o código feio que fizemos e que funcionou, dando bons nomes para as variáveis e funções,
+sepaando as funções de cada elemento.
+
+
+
