@@ -62,7 +62,7 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
             objeto = {
                 maiorNumero: num1,
                 maiorDivisivelPorMenor: num1 % num2 === 0,
-                diferenca: Math.abs(num1 - num2)
+            diferenca: Math.abs(num1 - num2)// método Math.ads() retorna o valor absoluto de um número. ou seja, retorna sempre ele positivo.
             }
         )    
     } else {
@@ -70,19 +70,22 @@ function retornaObjetoEntreDoisNumeros(num1, num2) {
             objeto = {
             maiorNumero: num2,
             maiorDivisivelPorMenor: num2 % num1 === 0,
-            diferenca: Math.abs(num1 - num2)
+            diferenca: Math.abs(num1 - num2)// método Math.ads() retorna o valor absoluto de um número. ou seja, retorna sempre ele positivo.
             }
         )
     }
-
-
-
     return objeto
 }
 
 // EXERCÍCIO 08
 function retornaNPrimeirosPares(n) {
-   
+    let numerosPares = [];
+    
+    for(let i = 0; numerosPares.length < n; i +=2) // Nossa, tentei diversas vezes e só o que faltava era o length kkk
+        if(i % 2 === 0){
+            numerosPares.push(i)
+        }
+    return numerosPares
 }
 
 // EXERCÍCIO 09
