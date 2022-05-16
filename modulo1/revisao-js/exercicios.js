@@ -109,27 +109,50 @@ function classificaTriangulo(ladoA, ladoB, ladoC) {
 
 // EXERCÍCIO 10
 function retornaSegundoMaiorESegundoMenor(array) {
-  
-}
+    const comparacao = (a, b) => {
+        return a - b;
+    }
+    return array.sort(comparacao)
 
+
+}
 // EXERCÍCIO 11
 function retornaChamadaDeFilme(filme) {
-   
+    
+    return `Venha assistir ao filme ${filme.nome}, de ${filme.ano}, dirigido por ${filme.diretor} e estrelado por ${filme.atores[0]}, ${filme.atores[1]}, ${filme.atores[2]}, ${filme.atores[3]}.`
+
 }
 
 // EXERCÍCIO 12
 function retornaPessoaAnonimizada(pessoa) {
-   
+    const pessoaAnonima = {
+        ...pessoa,
+        nome: "ANÔNIMO"
+    }
+
+    return pessoaAnonima
 }
 
 // EXERCÍCIO 13A
 function retornaPessoasAutorizadas(pessoas) {
-   
+    const pessoasAutorizadas = pessoas.filter(pessoas => {
+        if(pessoas.idade > 14 && pessoas.idade < 60 && pessoas.altura > 1.5){
+            return pessoas
+        }
+    })
+
+    return pessoasAutorizadas
 }
 
 // EXERCÍCIO 13B
 function retornaPessoasNaoAutorizadas(pessoas) {
-  
+    const pessoasAutorizadas = pessoas.filter(pessoas => {
+        if(pessoas.idade < 14 && pessoas.altura < 1.5 && pessoas.idade > 60){
+            return pessoas
+        }
+    })
+
+    return pessoasAutorizadas
 }
 
 // EXERCÍCIO 14
@@ -139,7 +162,10 @@ function retornaContasComSaldoAtualizado(contas) {
 
 // EXERCÍCIO 15A
 function retornaArrayOrdenadoAlfabeticamente(consultas) {
-  
+    const comparacao = (a, b) => {
+        return a = b;
+    }
+    return consultas.sort(comparacao)
 }
 
 // EXERCÍCIO 15B
