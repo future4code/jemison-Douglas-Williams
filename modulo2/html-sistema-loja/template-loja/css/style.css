@@ -21,7 +21,7 @@ a {
 }
 
 nav {
-    padding: 0 20% 0 20%;
+    padding: 0 25% 0 25%;
 }
 
 nav a {
@@ -36,9 +36,6 @@ table {
 }
 h3 {
     font-size: 130%;
-}
-table tr th img {
-    height: 150%;
 }
 
 footer h1 {
@@ -106,29 +103,30 @@ form button {
 }
 
 form input {
-    padding: 0.5%;
+    font-size: 75%;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5%;
 }
 
 form .link-foto {
     margin-left: 14.9%;
     margin-right: auto;
-    padding: 0.5% 10%;
 }
 
 form .link-descricao {
     margin-left: 5.7%;
     margin-right: auto;
-    padding: 0.5% 10%;
 }
 
 form .link-preco {
     margin-left: 14.5%;
     margin-right: auto;
-    padding: 0.5% 10%;
 }
 
 form .link-quantidade {
     margin-left: 4.3%;
     margin-right: auto;
-    padding: 0.5% 10%;
 }
