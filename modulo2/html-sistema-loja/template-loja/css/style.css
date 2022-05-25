@@ -1,18 +1,19 @@
+/* Página inicial / header / footer */
 body {
-    background-image: url(../img/papel-de-parede.jpg);
+    background-image: url(../img/fundo2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 header h1 {
-    color: rgb(247, 6, 6);
-    font-size: 380%;
+    color: rgb(21, 8, 170);
+    font-size: 400%;
     padding: 5% 30% 0 30%;  
 }
 
 header h2 { 
-    font-size: 200%;
-    padding: 0% 30% 0 30%;  
+    font-size: 300%;
+    padding: 0% 15% 0 15%;  
 }
 
 a {
@@ -28,10 +29,16 @@ nav a {
 }
 
 table {
-    font-size: 150%;
+    font-size: 200%;
     width: 1000px;
     margin-left: auto; 
     margin-right: auto;
+}
+h3 {
+    font-size: 130%;
+}
+table tr th img {
+    height: 150%;
 }
 
 footer h1 {
@@ -53,11 +60,75 @@ h2 {
 }
 
 ol{
-    color: white;
-    background-color: rgb(0, 0, 0);
     padding-left: 2.5%;
     font-size: 250%;
     width: 1000px;
     margin-left: auto; 
     margin-right: auto;
+}
+
+/* Controle de estoque */
+form {
+    font-size: 200%;
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form button {
+    display: block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #1403fc;
+    border-radius: 5px;
+    color: #1403fc;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#adicionar {
+    font-size: 20px;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin-top: 5%;
+    padding: 10px 178px;
+}
+  
+#adicionar:hover {
+    color: black;
+    box-shadow: 0 0 10px 0 rgb(201, 4, 4) inset, 0 0 10px 4px blue;
+}
+
+form input {
+    padding: 0.5%;
+}
+
+form .link-foto {
+    margin-left: 14.9%;
+    margin-right: auto;
+    padding: 0.5% 10%;
+}
+
+form .link-descricao {
+    margin-left: 5.7%;
+    margin-right: auto;
+    padding: 0.5% 10%;
+}
+
+form .link-preco {
+    margin-left: 14.5%;
+    margin-right: auto;
+    padding: 0.5% 10%;
+}
+
+form .link-quantidade {
+    margin-left: 4.3%;
+    margin-right: auto;
+    padding: 0.5% 10%;
 }
