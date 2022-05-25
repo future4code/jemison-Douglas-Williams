@@ -1,0 +1,63 @@
+body {
+    background-image: url(../img/papel-de-parede.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+header h1 {
+    color: rgb(247, 6, 6);
+    font-size: 380%;
+    padding: 5% 30% 0 30%;  
+}
+
+header h2 { 
+    font-size: 200%;
+    padding: 0% 30% 0 30%;  
+}
+
+a {
+    font-size: 150%;
+}
+
+nav {
+    padding: 0 20% 0 20%;
+}
+
+nav a {
+    background-color: orange;
+}
+
+table {
+    font-size: 150%;
+    width: 1000px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+footer h1 {
+    color: white;
+    background-color: black;
+}
+
+
+div img {
+    height: 100px;
+}
+
+/* Página funcionários */
+h2 {
+    font-size: 350%;
+    width: 1000px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+ol{
+    color: white;
+    background-color: rgb(0, 0, 0);
+    padding-left: 2.5%;
+    font-size: 250%;
+    width: 1000px;
+    margin-left: auto; 
+    margin-right: auto;
+}
