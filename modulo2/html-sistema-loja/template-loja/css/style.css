@@ -5,13 +5,13 @@ body {
     background-repeat: no-repeat;
 }
 
-header h1 {
+header > h1 {
     color: rgb(21, 8, 170);
     font-size: 400%;
     padding: 5% 30% 0 30%;  
 }
 
-header h2 { 
+header > h2 { 
     font-size: 300%;
     padding: 0% 15% 0 15%;  
 }
@@ -22,10 +22,6 @@ a {
 
 nav {
     padding: 0 25% 0 25%;
-}
-
-nav a {
-    background-color: orange;
 }
 
 table {
