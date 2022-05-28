@@ -3,8 +3,16 @@
     padding: 0;
 }
 
-body {
+/* body {
     background-image: url(../img/fundo-musica.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+} */
+
+img#foto_ponte,
+img#foto_bateria,
+img#foto_com_esposa {
+    max-width: 10%;
+    height:auto;
+    border-radius: 50%;
 }

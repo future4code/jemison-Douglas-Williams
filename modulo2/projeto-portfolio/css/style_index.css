@@ -1,0 +1,23 @@
+body {
+    background-image: url(../img/Fundo_Carro.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+img#foto_principal{
+    max-width: 10%;
+    height:auto;
+    border-radius: 50%;
+}
+
+div > img, {
+    display: block;
+    max-width: 7%;
+    height:auto;
+    border-radius: 50%
+}
+
+/* div > a > img {
+    max-width: 8%;
+    color: #ffffff;
+} */
