@@ -1,3 +1,43 @@
-/* .novaAba {
-    target-new: tab ! important
-} */
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+}
+
+#menu_de_navegacao {
+    font-size: 150%;
+    
+}
+
+#menu_de_navegacao > a {
+    margin-left: 5%;
+    text-decoration: none;
+
+}
+
+body {
+    background-image: url(../img/Fundo_Cubos_Escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    color: white;
+}
+
+p {
+    margin: 10% 0;
+    font-size: 130%;
+    background-color: black;
+    text-align: center;
+}
+
+
+div > button > a > img.projeto_loja {
+    background-size: 20%;
+}
