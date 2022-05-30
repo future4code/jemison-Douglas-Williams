@@ -2,6 +2,7 @@ header {
     color: rgb(255, 255, 255);
     text-align: right;
     text-decoration: none;
+    margin-right: 5%;
 }
 
 #menu_de_navegacao {
@@ -42,7 +43,7 @@ h3 {
 
 p#description {
     margin: 10% 0;
-    font-size: 130%;
+    font-size: 150%;
     background-color: black;
     text-align: center;
 }
@@ -51,6 +52,13 @@ h2#text  {
     color: white;
     text-align: center;
     font-size: 200%;
+}
+
+h2#text,
+ul,
+div#soft_skills,
+div#hard_skills {
+    font-size: 120%;
 }
 
 footer {
