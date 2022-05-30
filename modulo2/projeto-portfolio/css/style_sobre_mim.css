@@ -3,16 +3,57 @@
     padding: 0;
 }
 
-/* body {
-    background-image: url(../img/fundo-musica.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-} */
+header {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+}
+
+#menu_de_navegacao {
+    font-size: 150%;
+    
+}
+
+#menu_de_navegacao > a {
+    margin-left: 5%;
+    text-decoration: none;
+
+}
+
+body {
+    color: white;
+}
 
 img#foto_ponte,
-img#foto_bateria,
-img#foto_com_esposa {
-    max-width: 10%;
-    height:auto;
-    border-radius: 50%;
+img#foto_bateria {
+    display: flex;
+    max-width: 15%;
+    height: auto;
+    border-radius: 10%;
+    display: block;
+    margin: 5% auto 0 auto;
+}
+
+p {
+    margin: 5% 0 10% 0;
+    font-size: 130%;
+    background-color: black;
+    text-align: center;
+}
+
+body {
+    background-image: url(../img/Fundo_Cubos_Escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+footer {
+    text-decoration: none;
+    display: flex;
+    max-width: 15%;
+    height: auto;
+    border-radius: 10%;
+    display: block;
+    margin: 5% auto 0 auto;
 }
