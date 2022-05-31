@@ -2,18 +2,16 @@ header {
     color: rgb(255, 255, 255);
     text-align: right;
     text-decoration: none;
-    margin-right: 5%;
+    margin-right: 1%;
 }
 
 #menu_de_navegacao {
     font-size: 150%;
-    
 }
 
 #menu_de_navegacao > a {
-    margin-left: 5%;
+    margin-left: 2%;
     text-decoration: none;
-
 }
 
 body {
@@ -54,7 +52,6 @@ h2#text  {
     font-size: 200%;
 }
 
-h2#text,
 ul,
 div#soft_skills,
 div#hard_skills {

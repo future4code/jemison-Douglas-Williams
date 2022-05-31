@@ -6,15 +6,18 @@ header {
     color: rgb(255, 255, 255);
     text-align: right;
     text-decoration: none;
-    margin-right: 5%;
+    margin-right: 9%;
+    margin-top: 0.6%;
+
 }
 
 #menu_de_navegacao {
     font-size: 150%;
+
 }
 
 #menu_de_navegacao > a {
-    margin-left: 5%;
+    margin-left: 2%;
     text-decoration: none;
 }
 
@@ -35,11 +38,17 @@ h2#inicial {
     background-color: black;
     text-align: center;
 }
+div#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 h2#text {
     font-size: 130%;
     color: white;
-    margin-left: 31%;
+    text-align: center; 
 }
 
 img.projeto_loja {
@@ -51,13 +60,16 @@ img.projeto_loja {
 } 
 
 #botao_projeto {
-    height: 40%;
+    height: 50%;
     width: 30%;
-    margin-left: 20%;
+    margin: 0 0 0 35%;
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
     border-radius: 10px;
+    background-position: center center;
+    flex-direction: column center;
+
 
 }
 
@@ -76,7 +88,7 @@ img.projeto_loja {
 p#descricao_do_projeto {
     font-size: 130%;
     color: white;
-    margin-left: 25%;
+    text-align: center;
 }
 
 footer {

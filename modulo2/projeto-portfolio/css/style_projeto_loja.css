@@ -3,15 +3,17 @@ header {
     color: rgb(255, 255, 255);
     text-align: right;
     text-decoration: none;
-    margin-right: 5%;
+    margin-right: 0.7%;
+    margin-top: 0.5%;
+
 }
 
 #menu_de_navegacao {
-    font-size: 150%;
+    font-size: 151%;
 }
 
 #menu_de_navegacao > a {
-    margin-left: 5%;
+    margin-left: 2%;
     text-decoration: none;
 }
 
@@ -41,6 +43,7 @@ img#foto_site_loja {
     height: 50%;
     width: 50%;
 } 
+
 
 p {
     font-size: 150%;
