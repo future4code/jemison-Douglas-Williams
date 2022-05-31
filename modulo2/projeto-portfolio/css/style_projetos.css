@@ -60,9 +60,9 @@ img.projeto_loja {
 } 
 
 #botao_projeto {
-    height: 50%;
-    width: 30%;
-    margin: 0 0 0 35%;
+    height: 100%;
+    width: 40%;
+    margin: 0 0 0 30%;
     background-color: transparent;
     border-color: transparent;
     cursor: pointer;
