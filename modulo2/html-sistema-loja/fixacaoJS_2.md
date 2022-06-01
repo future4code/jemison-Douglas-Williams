@@ -10,3 +10,8 @@ function calculaPrecoTotal(quantidade) {
   
   return custoTotalDaCompra
 }
+
+
+const numerosIguais = arrayDeNumeros.filter(number => {
+        return number == numeroEscolhido
+    })
