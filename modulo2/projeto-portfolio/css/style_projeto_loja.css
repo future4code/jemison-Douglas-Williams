@@ -1,0 +1,73 @@
+
+header {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    margin-right: 0.7%;
+    margin-top: 0.5%;
+
+}
+
+#menu_de_navegacao {
+    font-size: 151%;
+}
+
+#menu_de_navegacao > a {
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+body {
+    color: white;
+}
+
+body {
+    background-image: url(../img/Fundo_Cubos_Escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+h1 {
+    font-size: 200%;
+    text-align: center;
+    margin: 10% auto 5% auto;
+}
+
+img#foto_site_loja {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+    height: 50%;
+    width: 50%;
+} 
+
+
+p {
+    font-size: 150%;
+    text-align: center;
+    background-color: black;
+
+}
+
+h3 {
+    font-size: 200%;
+    margin-left: 5%;
+}
+
+ol {
+    font-size: 150%;
+    margin-left: 5%;
+}
+
+footer {
+    text-decoration: none;
+    display: flex;
+    max-width: 15%;
+    height: auto;
+    border-radius: 10%;
+    display: block;
+    margin: 5% auto 0 auto;
+}

@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+header {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    margin-right: 9%;
+    margin-top: 0.6%;
+
+}
+
+#menu_de_navegacao {
+    font-size: 150%;
+
+}
+
+#menu_de_navegacao > a {
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/Fundo_Cubos_Escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main {
+    color: white;
+}
+
+h2#inicial {
+    margin: 10% auto;
+    font-size: 130%;
+    background-color: black;
+    text-align: center;
+}
+div#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2#text {
+    font-size: 130%;
+    color: white;
+    text-align: center; 
+}
+
+img.projeto_loja {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+    background-color: black;
+    border-radius: 10px;
+} 
+
+#botao_projeto {
+    height: 100%;
+    width: 40%;
+    margin: 0 0 0 30%;
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+    border-radius: 10px;
+    background-position: center center;
+    flex-direction: column center;
+
+
+}
+
+#botao_projeto {
+    box-shadow: 0 0 40px 40px transparent inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+}
+
+#botao_projeto:hover {
+    box-shadow: 0 0 10px 0 transparent inset, 0 0 10px 4px blue;
+    border-color: transparent;
+    border-radius: 10px;
+}
+
+p#descricao_do_projeto {
+    font-size: 130%;
+    color: white;
+    text-align: center;
+}
+
+footer {
+    text-decoration: none;
+    display: flex;
+    max-width: 15%;
+    height: auto;
+    border-radius: 10%;
+    display: block;
+    margin: 5% auto 0 auto;
+}

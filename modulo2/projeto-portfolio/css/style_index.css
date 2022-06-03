@@ -1,0 +1,112 @@
+header {
+    color: rgb(255, 255, 255);
+    text-align: right;
+    text-decoration: none;
+    margin-right: 1%;
+}
+
+#menu_de_navegacao {
+    font-size: 150%;
+}
+
+#menu_de_navegacao > a {
+    margin-left: 2%;
+    text-decoration: none;
+}
+
+body {
+    background-image: url(../img/Fundo_Cubos_Escuro.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+main > img#foto_principal{
+    max-width: 25%;
+    height: auto;
+    border-radius: 20%;
+    display: block;
+    margin: 5% auto 0 auto;
+}
+
+main {
+    color: white;
+}
+
+h1,
+h3 {
+    text-align: center;
+    font-size: 150%;
+}
+
+p#description {
+    margin: 10% 0;
+    font-size: 150%;
+    background-color: black;
+    text-align: center;
+}
+
+h2#text  {
+    color: white;
+    text-align: center;
+    font-size: 150%;
+}
+
+ul,
+div#soft_skills,
+div#hard_skills {
+    font-size: 120%;
+}
+
+footer {
+    display: flex;
+    color: white;
+}
+
+footer > form {
+    margin-right: 20%;
+    text-align: right;
+}
+
+div#contatos > a {
+    text-decoration: none;
+}
+
+form button {
+    display: block;
+    box-sizing: border-box;
+    background-color: white;
+    border: 2px solid #1403fc;
+    border-radius: 5px;
+    color: #1403fc;
+    cursor: pointer;
+    font-size: 10px;
+    padding: 10px 10px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#enviar {
+    font-size: 20px;
+    border-color: blue;
+    color: #fff;
+    box-shadow: 0 0 40px 40px blue inset, 0 0 0 0 blue;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    margin-top: 5%;
+    padding: 10px 178px;
+}
+  
+#enviar:hover {
+    color: black;
+    box-shadow: 0 0 10px 0 rgb(64, 64, 245) inset, 0 0 10px 4px blue;
+}
+
+form input {
+    font-size: 75%;
+    width: 85%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5%;
+}
