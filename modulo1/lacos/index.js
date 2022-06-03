@@ -1,36 +1,36 @@
-        // Exercícios de interpretação de código
-// 1.
-    let valor = 0
-    for(let i = 0; i < 5; i++) {
-    valor += i
-    }
-    console.log(valor)
+//         // Exercícios de interpretação de código
+// // 1.
+//     let valor = 0
+//     for(let i = 0; i < 5; i++) {
+//     valor += i
+//     }
+//     console.log(valor)
 
-// O código está realizando um laço da soma de todos os números de 1 a 4
-// Vai imprimir 10
+// // O código está realizando um laço da soma de todos os números de 1 a 4
+// // Vai imprimir 10
 
-//2.
-    const lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
-    for (let numero of lista) {
-    if (numero > 18) {
-            console.log(numero)
-        }
-    }
+// //2.
+//     const lista = [10, 11, 12, 15, 18, 19, 21, 23, 25, 27, 30]
+//     for (let numero of lista) {
+//     if (numero > 18) {
+//             console.log(numero)
+//         }
+//     }
 
-// a) Vai imprimir todos os números maiores que 18
-// b) Não sei.
+// // a) Vai imprimir todos os números maiores que 18
+// // b) Não sei.
 
-3.
-const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
-let quantidadeAtual = 0
-while(quantidadeAtual < quantidadeTotal){
-  let linha = ""
-  for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
-    linha += "*"
-  }
-  console.log(linha)
-  quantidadeAtual++
-}
+// 3.
+// const quantidadeTotal = Number(prompt("Digite a quantidade de linhas: "))
+// let quantidadeAtual = 0
+// while(quantidadeAtual < quantidadeTotal){
+//   let linha = ""
+//   for(let asteriscos = 0; asteriscos < quantidadeAtual + 1; asteriscos++){
+//     linha += "*"
+//   }
+//   console.log(linha)
+//   quantidadeAtual++
+// }
 
 // a)
 //     *

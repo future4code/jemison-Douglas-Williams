@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+Header {
+    display: flex;
+    height: 50px;
+    background-color: mediumvioletred;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#bolinho {
+    height: 12px;
+    margin-left: 1%;
+    margin-right: 1%;
+
+}
+
+h1 {
+    font-size: 1rem;
+}
+
+#login {
+    height: 1.2rem;
+    width: 5%;
+    font-size: 60%;
+    margin-left: auto;
+    margin-right: 1%;
+    
+}
+
+#menu_icones {
+    display: flex;
+    background-color: #f2d0e0;
+    height: 1000px;
+    width: 200px;
+}
+
+.home,
+.bombom,
+.carrinho,
+.icone {
+    display: block;
+    height: 0.8rem;
+    margin: 1.2rem 0.3rem 0 0.5rem;
+    
+}
+
+#menu {
+    font-size: 0.8rem;
+    margin: 0.2rem 0 0 0.4rem;
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    margin: 0 0 0 0.1rem;
+}
+
+main {
+    background-color: white;
+    height: 300px;
+    width: 50%;
+}
+
+#seta {
+    margin: 17px 0 0 auto;
+
+}
+
+.seta1, 
+.seta2, 
+.seta3, 
+.seta4 {
+    display: block;
+    height: 2.5%;
+    margin-bottom: 30%;
+}
+
