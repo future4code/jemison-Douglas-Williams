@@ -5,13 +5,12 @@
 
 header {
     display: grid;
-    grid-template-columns: 90% 10%;
+    grid-template-columns: 70% 5%;
     grid-template-rows: 50px;
     align-items: center;
-    justify-items: center;
+    justify-items: start;
     background-color: orange;
-    margin-left: 10%;
-    width: 80%;
+    width: 100%;
     font-size: 50%;
 }
 div#name {
@@ -23,7 +22,7 @@ div#name > a {
 }
 
 div#buscar {
-
+    margin-right: 10%;
 }
 
 
@@ -34,24 +33,24 @@ main {
     grid-template-rows: 1fr 1fr;
     row-gap: 10px;
     column-gap: 10px;
-    margin-left: 10%;
 }
 
+div#video > img.image {
+    height: 30px;
+    width: 30px;
+}
 
 .video {
-    color:azure;
-    height: 200px;
-    width: 100%;
-    background-color:rgb(44, 44, 59);
+    height: 30%;
+    width: 30%;
 }
 
 
 footer {
-    margin-left: 10%;
     color: white;
     background-color: rgb(44, 44, 59);
     height: 60px;
     position: fixed;
     bottom: 0;
-    width: 80%;
+    width: 100%;
 }
