@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 90% 10%;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+    background-color: orange;
+    margin-left: 10%;
+    width: 80%;
+    font-size: 50%;
+}
+div#name {
+    margin-left: 5%;
+}
+div#name > a {
+    text-decoration: none;
+    color: black;
+}
+
+div#buscar {
+
+}
+
+
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 10px;
+    column-gap: 10px;
+    margin-left: 10%;
+}
+
+
+.video {
+    color:azure;
+    height: 200px;
+    width: 100%;
+    background-color:rgb(44, 44, 59);
+}
+
+
+footer {
+    margin-left: 10%;
+    color: white;
+    background-color: rgb(44, 44, 59);
+    height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 80%;
+}
