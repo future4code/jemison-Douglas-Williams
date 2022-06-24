@@ -1,0 +1,82 @@
+.App {
+  background: rgba(0, 0, 0, 0.7) url(./img/fundo-musica.jpg);
+  background-size: cover;
+  background-blend-mode: darken;
+  color:rgb(193, 209, 231);
+  text-align: center;
+  align-items: center;
+  margin: 2%;
+  width: 73vw;
+
+}
+
+div {
+  background-color: rgb(193, 209, 231);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.5%;
+  border-radius: 50px;
+}
+
+h1 {
+  font-size: 5vh;
+}
+
+h3 {
+  font-size: 2.7vh;
+}
+
+.minha-foto {
+  width: 180px;
+  margin: 0.5%;
+  border-radius: 20px;
+}
+
+button {
+  margin-top: 1%;
+  display: block;
+  box-sizing: border-box;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid rgb(193, 209, 231);
+  box-shadow: 0 0 40px 40px rgb(255, 255, 255) inset, 0 0 0 0 blue;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+  border-radius: 10px;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.8vh;
+  padding: 1.2vh 1.5vw;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover {
+  color: black;
+  box-shadow: 0 0 10px 0 rgb(64, 64, 245) inset, 0 0 10px 4px blue;
+}
+
+.contato {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 1%;
+  width: 282px;
+}
+
+ a > .github {
+  height: 73px;
+  width: 73px;
+}
+
+.contato > a > .face,
+.github,
+.linke,
+.insta,
+.whats {
+  height: 70px;
+  width: 70px;
+  margin: 2%;
+}
+
+
