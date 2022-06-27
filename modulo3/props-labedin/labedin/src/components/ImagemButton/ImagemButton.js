@@ -3,11 +3,12 @@ import './ImagemButton.css'
 
 function ImagemButton(props) {
     return (
-        <div className="image-button-container">
-            <img src={ props.imagem }/>
-            <p>{ props.texto }</p>
-        </div>
-
+        <a className="image-button-container" href={ props.link }>
+            <div>
+                <p>{ props.texto }</p>
+                <img src={ props.imagem } alt="Seta apontando para baixo"/>
+            </div>
+        </a>
     )
 }
 

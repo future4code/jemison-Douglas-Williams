@@ -5,6 +5,8 @@
     padding: 20px 10px;
     margin-bottom: 10px;
     height: 200px;
+    border-radius: 20px;
+
 }
 
 .bigcard-container > img {

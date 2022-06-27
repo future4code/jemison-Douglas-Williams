@@ -11,7 +11,8 @@
   margin-top: 30px;
 }
 
-.page-section-container {
+.page-section-container,
+.page-section-container2 {
   width: 40vw;
   margin: 10px 0;
 }
@@ -25,4 +26,12 @@ h2 {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+}
+
+.page-section-container2 {
+  display: flex;
+}
+
+h1 {
+  margin: 5px;
 }
