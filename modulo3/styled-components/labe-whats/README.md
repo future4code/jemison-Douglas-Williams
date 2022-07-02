@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run: LabZap.surge.sh
+In the project directory, you can run: LabZap.surge.sh criei um segundo após conclusão do trabalho => labzap-landpage.surge.sh mas não abriu
 
 ### `npm start`
 
