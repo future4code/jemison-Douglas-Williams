@@ -1,28 +1,26 @@
 import React from 'react';
 import './App.css'
-import {ContainerPai,Titulo,Header,
-        LateralEsquerda,LateralDireita,
-        Input,Footer} from './style'
-import logo from './img/featured_channel.png'
+import Header from './components/Header/Header.js'
+import Main from './components/Main/MainContainer.js'
+import LateralDireita from './components/LateralDireita/LateralDireita.js'
+import LateralEsquerda from './components/LateralEsquerda/LateralEsquerda.js'
+import Footer from './components/Footer/Footer.js'
+import {ContainerPai,ContainerCentro} from './style.js'
 
 function App() {
   return (
-    <div>
-      <Header>
-          <img src={logo} alt="Logo LabZap"/>
-          <Titulo> LabZap </Titulo>
-      </Header>
-      <ContainerPai>
+    <ContainerPai>
+      <Header/>
+      <ContainerCentro>
         <LateralEsquerda/>
+
+        <Main/>
+
         <LateralDireita/>
-      </ContainerPai>
-      <Input>
-        Remetente: 
-      </Input>
-      <Footer>
-        Copyright ® 2022 Douglas Williams All rights reserved R. Vicent Paulo kunitz, 35, Limeira Baixa Brusque-SC CEP  88356-088
-      </Footer>
-    </div>
+      </ContainerCentro>
+      
+      <Footer/>
+    </ContainerPai>
   );
 }
 
