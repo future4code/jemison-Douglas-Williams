@@ -1,10 +1,6 @@
-import React from 'react';
-import styled from 'styled-components';
-import Post from './components/Post/Post';
-import fotoJulia from './img/foto1.jpg';
-import fotoVivi from './img/foto2.jpg';
-import viviane from './img/viviane.jpg';
-import juliana from './img/juliana.jpg'
+import React from "react";
+import styled from "styled-components";
+import Post from "./components/Post/Post";
 
 
 const MainContainer = styled.div`
@@ -13,36 +9,40 @@ const MainContainer = styled.div`
   flex-direction: column;
   align-items: center;
 `
+
 function App() {
-  return(
-    <div className="App">
-        <MainContainer>
-           <Post
-            nomeUsuario={'paulinha'}
-            fotoUsuario={'https://picsum.photos/50/50'}
-            fotoPost={'https://picsum.photos/200/150'}
-          />
-        </MainContainer>
+  const lista = [
+    {
+      nomeUsuario: "paulinha",
+      fotoUsuario: "https://picsum.photos/50/50",
+      fotoPost: "https://picsum.photos/210/150",
+    },
 
-        <MainContainer>
-          <Post
-            nomeUsuario={'_juliana'}
-            fotoUsuario={juliana}
-            fotoPost={fotoJulia}
-          />
-        </MainContainer>
+    {
+      nomeUsuario: "_juliana",
+      fotoUsuario: "https://picsum.photos/20/50",
+      fotoPost: "https://picsum.photos/220/150",
+    },
 
-        <MainContainer>
-          <Post
-            nomeUsuario={'viviane_'}
-            fotoUsuario={viviane}
-            fotoPost={fotoVivi}
-          />
-        </MainContainer>
-    </div>
-)
+    {
+      nomeUsuario: "marjorye__",
+      fotoUsuario: "https://picsum.photos/40/50",
+      fotoPost: "https://picsum.photos/230/150",
+    },
+  ];
 
+  const informacoesLista = lista.map((usuario, index) => {
+    return (
+      <Post
+        key={index}
+        nomeUsuario={usuario.nomeUsuario}
+        fotoUsuario={usuario.fotoUsuario}
+        fotoPost={usuario.fotoPost}
+      />
+    );
+  });
+
+  return <MainContainer>{informacoesLista}</MainContainer>;
 }
-
 
 export default App;
