@@ -10,25 +10,44 @@ const MainContainer = styled.div`
   align-items: center;
 `
 
-function App() {
+function App(
+
   const lista = [
     {
       nomeUsuario: "paulinha",
       fotoUsuario: "https://picsum.photos/50/50",
       fotoPost: "https://picsum.photos/210/150",
     },
+    
+  return(
+    <div className="App">
+        <MainContainer>
+           <Post
+            nomeUsuario={'paulinha'}
+            fotoUsuario={'https://picsum.photos/50/50'}
+            fotoPost={'https://picsum.photos/200/150'}
+          />
+        </MainContainer>,
 
-    {
-      nomeUsuario: "_juliana",
-      fotoUsuario: "https://picsum.photos/20/50",
-      fotoPost: "https://picsum.photos/220/150",
-    },
+        <MainContainer>
+          <Post
+            nomeUsuario={'_juliana'}
+            fotoUsuario={juliana}
+            fotoPost={fotoJulia}
+          />
+        </MainContainer>
 
-    {
-      nomeUsuario: "marjorye__",
-      fotoUsuario: "https://picsum.photos/40/50",
-      fotoPost: "https://picsum.photos/230/150",
-    },
+        <MainContainer>
+          <Post
+            nomeUsuario={'viviane_'}
+            fotoUsuario={viviane}
+            fotoPost={fotoVivi}
+          />
+        </MainContainer>
+    </div>
+  )
+
+   
   ];
 
   const informacoesLista = lista.map((usuario, index) => {
