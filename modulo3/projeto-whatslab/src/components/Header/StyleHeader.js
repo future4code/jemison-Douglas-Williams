@@ -6,7 +6,7 @@ export const HeaderEstilizado = styled.header`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 7vh;
+    height: 6vh;
 
 `
 
