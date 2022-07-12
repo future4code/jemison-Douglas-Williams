@@ -6,6 +6,7 @@ export const SectionMensage = styled.section`
     width: 60vw;
     border: 2px solid orange;
     border-radius: 10px;
+    margin: 10px auto;
 
 
 `
