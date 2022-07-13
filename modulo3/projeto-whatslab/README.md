@@ -6,6 +6,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run: possessive-zoo.surge.sh
 
+new surge
+projeto-labewhats-d.surge.sh
+
 ### `npm start`
 
 Runs the app in the development mode.\
