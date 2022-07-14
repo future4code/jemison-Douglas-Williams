@@ -4,10 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Available Scripts
 
-In the project directory, you can run: possessive-zoo.surge.sh
-
-new surge
-projeto-labewhats-d.surge.sh
+In the project directory, you can run: new-whatslab.surge.sh
 
 ### `npm start`
 
