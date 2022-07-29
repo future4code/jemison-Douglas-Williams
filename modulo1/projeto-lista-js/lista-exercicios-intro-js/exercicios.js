@@ -69,34 +69,16 @@ function imprimeTresCoresFavoritas() {
   const cor2 = prompt("Outra cor favorita:")
   const cor3 = prompt("Ultima cor favorita:")
 
-  const cor1 = prompt("Uma cor favorita:")
-  const cor2 = prompt("Outra cor favorita:")
-  const cor3 = prompt("Ultima cor favorita:")
-
   const listaCores = [
       cor1,
       cor2,
       cor3,
   ]
-    const cor1 = prompt("Uma cor favorita:")
-    const cor2 = prompt("Outra cor favorita:")
-    const cor3 = prompt("Ultima cor favorita:")
-
-  const listaCores = [
-      cor1,
-      cor2,
-      cor3,
-  ]
-
-=======
-    ]
     console.log(listaCores)
 }
 
 // EXERCÍCIO 06
 function retornaStringEmMaiuscula(string) {
- // console.log(string.toUpperCase())
-
   return(string.toUpperCase())
 
 }
@@ -105,11 +87,6 @@ function retornaStringEmMaiuscula(string) {
 function calculaIngressosEspetaculo(custo, valorIngresso) {
   const ingressosVendidos = custo / valorIngresso
 
-  const ingressosVendidos = custo / valorIngresso
-
-  return ingressosVendidos
-  // implemente sua lógica aqui
-
   return ingressosVendidos
 }
 
@@ -117,29 +94,16 @@ function calculaIngressosEspetaculo(custo, valorIngresso) {
 function checaStringsMesmoTamanho(string1, string2) {
   return string1.length == string2.length
 
-  return string1.length == string2.length
-
-  // implemente sua lógica aqui
-
-
 }
 
 // EXERCÍCIO 09
 function retornaPrimeiroElemento(array) {
   return array[0]
-=======
-
-  return array[0]
-  // implemente sua lógica aqui
-
 
 }
 
 // EXERCÍCIO 10
 function retornaUltimoElemento(array) {
-  return(array[array.length - 1])
-=======
-
   return(array[array.length - 1])
 
 }
@@ -157,7 +121,6 @@ function trocaPrimeiroEUltimo(array) {
 
   console.log(array)
   return array
-  // implemente sua lógica aqui
 
 }
   
