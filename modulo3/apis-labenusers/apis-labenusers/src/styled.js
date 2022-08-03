@@ -62,6 +62,11 @@ export const Button = styled.button`
         background-color: white;
         border: white;
     }
+
+    @media screen and (max-width: 870px) {
+        font-size: 1em;
+        width: 100px;
+    }
 `
 
 export const ButtonSearch = styled.button`
@@ -71,7 +76,7 @@ export const ButtonSearch = styled.button`
     width: 10vw;
     margin: 2vh auto;
     cursor: pointer;
-    font-size: clamp(0.5em, 1em + 2vh, 1.2em);
+    font-size: clamp(0.2em, 1em + 1vh, 1.2em);
     background-color: black;
     border: black;
     color: white;
@@ -82,6 +87,11 @@ export const ButtonSearch = styled.button`
         color: black;
         background-color: white;
         border: white;
+    }
+
+    @media screen and (max-width: 870px) {
+        font-size: 1em;
+        width: 100px;
     }
 `
 
@@ -94,9 +104,10 @@ export const Titulo = styled.h1`
 export const ButtonDel = styled.button`
 `
 
-export const ButtonReturn = styled.button`
+export const ButtonTransition = styled.button`
     display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     height: 3vh;
     width: 30vw;
@@ -107,6 +118,11 @@ export const ButtonReturn = styled.button`
     :hover{
         transform: scale(1.1);
         opacity: 0.5;
+    }
+
+    @media screen and (max-width: 870px) {
+        font-size: 80%;
+        width: 80vw;
     }
 `
 
@@ -189,4 +205,9 @@ export const InputSearch = styled.input`
     border-radius: 10px;
     margin-bottom: 2vh;
     width: 20vw;
+
+
+    @media screen and (max-width: 870px) {
+        width: 200px;
+    }
 `

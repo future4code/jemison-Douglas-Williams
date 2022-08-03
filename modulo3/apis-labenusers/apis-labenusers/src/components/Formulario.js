@@ -8,7 +8,7 @@ import {
   Label,
   Input,
   Button,
-  ButtonReturn
+  ButtonTransition
 } from "../styled";
 import Lista from "../img/list_black.png"
 
@@ -63,11 +63,11 @@ function Formulario(props) {
     <ContainerPai>
       
       <Display>
-        <ButtonReturn onClick={() => props.mudarTela("list")}>
+        <ButtonTransition onClick={() => props.mudarTela("list")}>
         Ir para lista de usuários
         <img src={Lista} alt="Icone de Lixeira" />
         
-        </ButtonReturn>
+        </ButtonTransition>
         <FormAdd>
           <Label>
             <Input

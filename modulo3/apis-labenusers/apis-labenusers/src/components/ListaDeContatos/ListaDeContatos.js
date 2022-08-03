@@ -4,7 +4,7 @@ import {
   Display,
   Titulo,
   ButtonDel,
-  ButtonReturn,
+  ButtonTransition,
   ContainerList,
   IconeProfile,
   InputSearch,
@@ -27,12 +27,6 @@ function ListaDeContatos(props) {
   const handlePesquisa = (e) => {
     setPesquisa(e.target.value);
   };
-
-  // PASSAR O USEEFFECT COM A REQUISIÇÃO GET
-  // PARA RENDERIZAR NA TELA AUTOMATICAMENTE
-  useEffect(() => {
-    getAllUsers();
-  }, []);
 
   //Variáveis da API
   const serviceHeaders = {
@@ -84,13 +78,17 @@ function ListaDeContatos(props) {
       });
   };
 
+  useEffect(() => {
+    getAllUsers();
+  }, []);
+
   return (
     <ContainerPai>
       <Display>
-        <ButtonReturn onClick={() => props.mudarTela("start")}>
+        <ButtonTransition onClick={() => props.mudarTela("start")}>
           Voltar para cadastro de usuários
         <img src={HomeBlack} alt="Icone de Lixeira" />
-        </ButtonReturn>
+        </ButtonTransition>
         <Titulo>Lista de Contatos</Titulo>
         {allUsers.map((item) => {
           return (
