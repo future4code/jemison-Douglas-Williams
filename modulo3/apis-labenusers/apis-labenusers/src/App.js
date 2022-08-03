@@ -22,9 +22,7 @@ function App() {
 }
   return (
     <div>
-      {/* <Formulario /> */}
       {renderizarTela()}
-      {/* <ListaDeContatos /> */}
     </div>
   );
 }

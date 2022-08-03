@@ -1,6 +1,5 @@
 import styled from "styled-components"
 
-
 // Formulário
 export const ContainerPai = styled.div`
 `
@@ -15,6 +14,8 @@ export const Display = styled.div`
     height: auto;
     width: 90vw;
     margin: 30vh auto;
+    box-shadow: 2px 2px 5px 2px black;
+
 `
 
 
@@ -91,18 +92,21 @@ export const Titulo = styled.h1`
 `
 
 export const ButtonDel = styled.button`
-    border-radius: 10px;
 `
+
 export const ButtonReturn = styled.button`
+    display: flex;
+    justify-content: center;
     border-radius: 10px;
     height: 3vh;
-    width: 20vw;
+    width: 30vw;
     background-color: transparent;
     border: transparent;
     cursor: pointer;
 
-    :hover {
-        color: white;
+    :hover{
+        transform: scale(1.1);
+        opacity: 0.5;
     }
 `
 
@@ -135,8 +139,8 @@ export const Contato = styled.div`
 `
 
 export const IconeProfile = styled.img`
-    margin: 5px;
-    width: 1.4vw;
+    margin: 2px;
+    width: 30px;
 `
 
 export const ContainerList = styled.div`
@@ -153,13 +157,15 @@ export const ContainerList = styled.div`
         cursor:pointer;
         border-radius:10px;
         margin: 0 0 0 auto;
+        border: none;
+        background-color: transparent;
+
 
     }
 
     button:hover{
-        background-color:red;
-        border-color: red;
-        color: white;
+        transform: scale(1.1);
+        opacity: 0.5;
     }
 
 `

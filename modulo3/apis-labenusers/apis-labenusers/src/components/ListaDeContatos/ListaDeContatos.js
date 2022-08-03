@@ -8,7 +8,6 @@ import {
   ContainerList,
   IconeProfile,
   InputSearch,
-  Button,
   Contato,
   ContatoList,
   ButtonSearch
@@ -16,6 +15,8 @@ import {
 import { url } from "../../constants/index";
 import axios from "axios";
 import Icone from "../../img/icone-contato.png";
+import LixeiraPreta from "../../img/lixeira.png"
+import HomeBlack from "../../img/home_black.png"
 
 function ListaDeContatos(props) {
   //Estados
@@ -88,21 +89,22 @@ function ListaDeContatos(props) {
       <Display>
         <ButtonReturn onClick={() => props.mudarTela("start")}>
           Voltar para cadastro de usuários
+        <img src={HomeBlack} alt="Icone de Lixeira" />
         </ButtonReturn>
         <Titulo>Lista de Contatos</Titulo>
-        <ContainerList>
         {allUsers.map((item) => {
           return (
+            <ContainerList>
             <Contato key={item.id}>
               <IconeProfile src={Icone} alt="Icone contato" />
               <ContatoList>{item.name}</ContatoList>
               <ButtonDel onClick={() => deleteUser(item.id)}>
-                Del
+                <img src={LixeiraPreta} alt="Icone de Lixeira" />
               </ButtonDel>
             </Contato>
+            </ContainerList>
           );
         })}
-        </ContainerList>
         <h2>Pesquisar usuários</h2>
         <InputSearch
           placeholder="Nome"

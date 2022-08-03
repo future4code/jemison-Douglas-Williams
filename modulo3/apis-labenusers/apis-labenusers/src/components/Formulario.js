@@ -7,8 +7,10 @@ import {
   FormAdd,
   Label,
   Input,
-  Button
+  Button,
+  ButtonReturn
 } from "../styled";
+import Lista from "../img/list_black.png"
 
 function Formulario(props) {
   //Estado do Input
@@ -61,9 +63,11 @@ function Formulario(props) {
     <ContainerPai>
       
       <Display>
-        <button onClick={() => props.mudarTela("list")}>
-        Ir para lista de contatos ->
-        </button>
+        <ButtonReturn onClick={() => props.mudarTela("list")}>
+        Ir para lista de usuários
+        <img src={Lista} alt="Icone de Lixeira" />
+        
+        </ButtonReturn>
         <FormAdd>
           <Label>
             <Input
