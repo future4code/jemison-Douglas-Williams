@@ -27,6 +27,7 @@ export const ContainerPai = styled.section`
 export const Container = styled.div`
     display: flex;
     justify-content: center;
+    flex-direction: column;
     margin: 15vh auto;
     height: 60vh;
     max-width: 300px;

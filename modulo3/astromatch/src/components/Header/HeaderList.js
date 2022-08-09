@@ -1,12 +1,18 @@
 import React from "react"
 import { HeaderContainer, ButtonNavegationList, SpanTitulo1List, SpanTitulo2List } from "./styled";
 import IconeLista from "../../img/icone-list.png"
+import { useNavigate } from "react-router-dom";
 
 
-function Card (props) {
+function HeaderList () {
+    const navigate = useNavigate()
+
+    const goToHomePage = () => {
+        navigate("/")
+    }
     return (
         <HeaderContainer>
-            <ButtonNavegationList onClick={() => props.changeScreen("start")}>
+            <ButtonNavegationList onClick={goToHomePage}>
                 <img src={IconeLista} alt="Icone para lista de Matches" />
             </ButtonNavegationList>
             <SpanTitulo1List>astro</SpanTitulo1List><SpanTitulo2List>match</SpanTitulo2List>
@@ -15,4 +21,4 @@ function Card (props) {
     )
 }
 
-export default Card;
+export default HeaderList;

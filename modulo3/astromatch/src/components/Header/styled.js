@@ -7,7 +7,7 @@ export const HeaderContainer = styled.header`
     height: 35px;
     width: 100%;
     background-color: white;
-    margin: 0 auto;
+    margin: 0 auto auto auto;
     
 `
 
@@ -48,6 +48,14 @@ export const ButtonNavegationHome = styled.button`
         height: 30px;
     }
 
+    :hover{
+        transform: scale(1.1);
+    }
+
+    :active{
+        transform: scale(1.0);
+    }
+
 
 `
 
@@ -61,6 +69,14 @@ export const ButtonNavegationList = styled.button`
 
     img {
         height: 30px;
+    }
+
+    :hover{
+        transform: scale(1.1);
+    }
+
+    :active{
+        transform: scale(1.0);
     }
 
 `
