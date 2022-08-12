@@ -1,26 +1,31 @@
 import { createGlobalStyle } from "styled-components";
-import styled from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     :root {
         --deep-blue: #011640;
         --dark-cyan: #008B8B;
-        --dark: #383b40;
+        --soft-dark: #383b40;
         --dark-magenta: #8B008B;
         --soft-white: #f2f2f2;
     }
 
     button {
-        border: none;
-        background-color: #383b40;
-        color: white;
+        justify-content: center;
+        align-items: center;
+        border-color:  var(--soft-dark);
+        border-radius: 10px;
+        background-color: var(--soft-dark);
+        color: var(--soft-white);
         cursor: pointer;
         outline: none;
-        border-radius: 10px;
+        width: 10vw;
+        height: 6vh;
+        font-size: 1.5rem;
+        
     
     
         :hover{
-            transform: scale(1.2);
+            transform: scale(1.1);
         }
         
         :active{
@@ -29,7 +34,8 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 2.5rem;
+        font-size: 4rem;
+        margin-bottom: 3rem;
         font-weight: bold;
         color: var(--soft-white);
         background-color: var();
