@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import styled from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     :root {
@@ -7,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         --soft-dark: #383b40;
         --dark-magenta: #8B008B;
         --soft-white: #f2f2f2;
+        --Dark-Grey: #A9A9A9;
     }
 
     button {
@@ -20,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         width: 10vw;
         height: 6vh;
-        font-size: 1.5rem;
+        font-size: 0.8rem;
         
     
     
@@ -34,15 +36,15 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     h1 {
-        font-size: 4rem;
-        margin-bottom: 3rem;
+        font-size: 2rem;
+        margin: 1rem auto;
         font-weight: bold;
-        color: var(--soft-white);
-        background-color: var();
+        color: var(--soft-dark);
     }
    
     body {
-        background-color: var(--deep-blue);
+        background-color: var(--Dark-Grey);
+        
     }
 
     * {
@@ -50,8 +52,37 @@ export const GlobalStyle = createGlobalStyle`
         padding: 0;
         border-sizing: border-box;
     }
-
+    
+    
 
 `
+
+export const Container = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24vh auto;
+    width: 50vw;
+    height: auto;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    border: 2px solid var(--soft-dark);
+    background-color: var(--soft-white);
+
+`
+
+export const Section = styled.section`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid var(--soft-dark);
+    width: 60%;
+    height: 10vh;
+    margin: 0 auto;
+
+`
+
 
 

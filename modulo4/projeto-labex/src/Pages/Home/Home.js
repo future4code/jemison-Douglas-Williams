@@ -1,27 +1,24 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { HomeContainer, HomeTitle, HomeButton, HomeSection} from './styled';
-
+import { Container } from "../../GlobalStyled"
 
 
 function Home() {
-  const navigate = useNavigate()
 
-    const goToListTrips = () => {
-        navigate("/ListTrip")
-    }
-
-    const goToAdminHome = () => {
-      navigate("/AdminHouse")
-  }
   return (
-    <HomeContainer>
+    <Container>
       <HomeTitle>LabeX</HomeTitle>
       <HomeSection>
-        <HomeButton onClick={goToListTrips}>Ver Lista</HomeButton>
-        <HomeButton onClick={goToAdminHome}>Área Administrativa</HomeButton>
+      <Link to="ListTrip">
+      <HomeButton>Ver Lista</HomeButton>
+        </Link>
+
+        <Link to="Login">
+      <HomeButton>Área Administrativa</HomeButton>
+        </Link>
       </HomeSection>
-    </HomeContainer>
+    </Container>
   );
 }
 

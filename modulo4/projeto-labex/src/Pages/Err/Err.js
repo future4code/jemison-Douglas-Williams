@@ -1,10 +1,11 @@
 import React from 'react';
+import { Container } from '../../GlobalStyled';
 
 function Erro() {
   return (
-    <div>
+    <Container>
         <h1>Not Found 404</h1>
-    </div>
+    </Container>
   );
 }
 

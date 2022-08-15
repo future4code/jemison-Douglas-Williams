@@ -9,7 +9,10 @@ export const HomeContainer = styled.section`
     margin: 24vh auto;
     width: 50vw;
     height: 50vh;;
-    border: 5px solid var(--soft-white);
+    box-shadow: 5px 5px 5px black;
+    border-radius: 10px;
+    border: 2px solid var(--soft-black);
+    background-color: var(--soft-white);
 
 
 `
@@ -20,10 +23,12 @@ export const HomeSection = styled.section`
 `
 
 export const HomeTitle = styled.h1`
+    margin: 20vh auto 5vh auto;
 
 `
 
 export const HomeButton = styled.button`
-    margin: 0 5vw;
+    margin: 0 5vw 25vh 5vw;
     align-items: center;
+
 `

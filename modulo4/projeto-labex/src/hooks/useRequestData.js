@@ -8,16 +8,16 @@ export function useRequestData(url) {
     const [isError, setIsError] = useState("");
 
     useEffect(() => {
-        axios
-        .get(url)
+        setIsLoading(true);
+        axios.get(url)
         .then((response) => {
         setIsLoading(false)
-        setData(response.data)
+        setData(response.data.trips)
         }).catch((error) => {
         setIsLoading(false)
         setIsError(error)
-        console.log(error)
-        })}, [url]);
+        console.log(error.response.data)
+        })}, [url])
 
     return [data, isLoading, isError];
 }
