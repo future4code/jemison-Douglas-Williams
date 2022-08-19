@@ -43,7 +43,7 @@ export const GlobalStyle = createGlobalStyle`
     }
    
     body {
-        background-color: var(--Dark-Grey);
+        background-color: var(--soft-white);
         
     }
 
@@ -62,13 +62,10 @@ export const Container = styled.section`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 24vh auto;
-    width: 50vw;
-    height: auto;
-    box-shadow: 5px 5px 5px black;
+    margin: 0 auto;
+    width: 80vw;
     border-radius: 10px;
-    border: 2px solid var(--soft-dark);
-    background-color: var(--soft-white);
+    padding: 10px;
 
 `
 

@@ -1,15 +1,21 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from '../../GlobalStyled';
 import { Inputs, Form, Sections } from '../ApplicationForm/styled';
 import { Section, Button } from "./styled"
 import { Planet } from "../../Mockup/Planet";
-
+import { useProtectedPage } from "../../hooks/useProtectedPage";
 
 
 
 function CreateTrip() {
+  useProtectedPage();
 
+  useEffect(() => {
+    const token = localStorage.getItem("trips");
+  })
+
+  //Mapeamento do mock de dados para o formulário
   const planets = Planet.map((planet) => {
     return <option key={planet.index} value={planet.index}>{planet}</option>
   })

@@ -1,19 +1,19 @@
 import styled from 'styled-components'
 
 
-export const HomeContainer = styled.section`
+export const Container = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 24vh auto;
-    width: 50vw;
-    height: 50vh;;
+    margin: 4vh auto;
+    width: 80vw;
+    height: auto;
     box-shadow: 5px 5px 5px black;
     border-radius: 10px;
-    border: 2px solid var(--soft-black);
+    border: 2px solid var(--soft-dark);
     background-color: var(--soft-white);
-
+    padding: 10px;
 
 `
 

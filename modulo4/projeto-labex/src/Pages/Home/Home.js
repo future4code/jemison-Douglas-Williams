@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { HomeContainer, HomeTitle, HomeButton, HomeSection} from './styled';
+import { HomeTitle, HomeButton, HomeSection } from './styled';
 import { Container } from "../../GlobalStyled"
 
 
