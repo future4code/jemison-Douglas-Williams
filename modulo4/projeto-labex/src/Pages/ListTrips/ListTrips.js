@@ -5,7 +5,6 @@ import { Container } from "../../GlobalStyled"
 import { Trips } from "../../components/Trips/Trips"
 
 
-
 function ListTrips() {
   
 

@@ -1,8 +1,8 @@
-import React, { useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Container } from '../../GlobalStyled';
 import { Inputs, Form, Sections } from '../ApplicationForm/styled';
-import { Section, Button } from "./styled"
+import { Title, Button, SectionButtons } from "./styled"
 import { Planet } from "../../Mockup/Planet";
 import { useProtectedPage } from "../../hooks/useProtectedPage";
 
@@ -10,10 +10,6 @@ import { useProtectedPage } from "../../hooks/useProtectedPage";
 
 function CreateTrip() {
   useProtectedPage();
-
-  useEffect(() => {
-    const token = localStorage.getItem("trips");
-  })
 
   //Mapeamento do mock de dados para o formulário
   const planets = Planet.map((planet) => {
@@ -23,28 +19,57 @@ function CreateTrip() {
 
   return (
     <Container>
-      <h1>Criar Viagem</h1>
-      <Sections>
-        <Form>
-          <Inputs type="text" placeholder="Nome" />
-          <select>
+      <Title>Criar Viagem</Title>
+        <Form 
+        onSubmit={""}
+        >
+          <Sections>
+          <Inputs 
+          type="text" 
+          placeholder="Nome" 
+          required
+          pattern='^.{4,}'
+          title="Mínimo de 4 caracteres"
+          />
+          <select
+          required
+          >
             <option>Escolha um Planeta</option>
             {planets}
           </select>
-          <Inputs type="date" placeholder="" />
-          <Inputs type="text" placeholder="Descrição" />
-          <Inputs type="number" placeholder="Duração" />
-        </Form>
+          <Inputs 
+          type="date" 
+          placeholder="" 
+          required
+          
+          />
+          <Inputs 
+          type="text" 
+          placeholder="Descrição" 
+          required
+          pattern='^.{20,}'
+          title="Mínimo de 20 caracteres"
+          />
+          <Inputs 
+          type="number" 
+          placeholder="Duração" 
+          required
+          pattern='^.{20,}'
+          title="Mínimo de 20 caracteres"
+          />
       </Sections>
-      <Section>
+      <SectionButtons>
         <Link to="/AdminHouse">
-          <Button>voltar</Button>
+          <Button
+          type="button"
+          >Voltar</Button>
         </Link>
 
         <Button>Criar</Button>
 
-      </Section>
+      </SectionButtons>
 
+          </Form>
 
     </Container>
   );

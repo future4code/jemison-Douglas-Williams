@@ -23,7 +23,7 @@ export const HomeSection = styled.section`
 `
 
 export const HomeTitle = styled.h1`
-    margin: 20vh auto 5vh auto;
+    margin: 30vh auto 5vh auto;
 
 `
 

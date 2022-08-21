@@ -20,8 +20,8 @@ export const GlobalStyle = createGlobalStyle`
         color: var(--soft-white);
         cursor: pointer;
         outline: none;
-        width: 10vw;
-        height: 6vh;
+        width: 100px;
+        height: 4vh;
         font-size: 0.8rem;
         
     
@@ -33,13 +33,30 @@ export const GlobalStyle = createGlobalStyle`
         :active{
             transform: scale(1.0);
         }
+
+        @media (max-width: 500px) {
+            height: 6vh;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 380px) {
+            height: 5vh;
+        }
+
     }
 
+
     h1 {
-        font-size: 2rem;
-        margin: 1rem auto;
+        text-align: center;
+        font-size: 10vh;
         font-weight: bold;
         color: var(--soft-dark);
+
+        @media (max-width: 500px) {
+        width: 100%;
+        font-size: 6vh;
+        }
+
     }
    
     body {
@@ -53,8 +70,6 @@ export const GlobalStyle = createGlobalStyle`
         border-sizing: border-box;
     }
     
-    
-
 `
 
 export const Container = styled.section`
@@ -79,6 +94,7 @@ export const Section = styled.section`
     height: 10vh;
     margin: 0 auto;
 
+    
 `
 
 

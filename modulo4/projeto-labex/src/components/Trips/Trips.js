@@ -15,10 +15,6 @@ export function Trips() {
                 <LabelTrips> Nome:</LabelTrips><InfoTrips>{trip.name}</InfoTrips>
                 </TripContainer>
                 <TripContainer>
-                <LabelTrips> Descrição: </LabelTrips><InfoTrips>{trip.description}</InfoTrips>
-
-                </TripContainer>
-                <TripContainer>
                 <LabelTrips> Planeta: </LabelTrips><InfoTrips>{trip.planet}</InfoTrips>
 
                 </TripContainer>
@@ -28,6 +24,10 @@ export function Trips() {
                 </TripContainer>
                 <TripContainer>
                 <LabelTrips> Data: </LabelTrips><InfoTrips>{trip.date}</InfoTrips>
+
+                </TripContainer>
+                <TripContainer>
+                <LabelTrips> Descrição: </LabelTrips><InfoTrips>{trip.description}</InfoTrips>
 
                 </TripContainer>
 

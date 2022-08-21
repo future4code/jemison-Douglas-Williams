@@ -1,25 +1,14 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Container } from '../../GlobalStyled';
-import { Button, Inputs, SectionsButtons, SectionInputs, SectionPassword, EyeButton } from "./styled";
+import { Title, Button, Inputs, SectionsButtons, SectionInputs, SectionPassword, Container } from "./styled";
 import { Form } from "../ApplicationForm/styled"
 import axios from 'axios';
 import { Base_url, serviceHeaders } from '../../constants';
 import { useForm } from "../../hooks/useForm";
-import EyeOpen from "../../img/eye-icon.png"
-import { EyeIcon } from "../../components/EyeIcon/EyeIcon"
 
 
 function Login() {
   const [form, onChange] = useForm({ email: "", password: "" })
-
-  //O
- 
-  const [values, setValues] = useState(true);
-
-  const passwordChange = (prop, e) => {
-    setValues({...values, [prop]: e.target.value })
-  };
 
 
   const login = (e) => {
@@ -27,7 +16,7 @@ function Login() {
     axios.post(`${Base_url}login`, form)
       .then(response => {
         localStorage.setItem("token", response.data.token)
-        window.location.href = "/"
+        window.location.href = "/AdminHouse"
       }).catch(error => {
         console.log(error.response)
 
@@ -40,7 +29,7 @@ function Login() {
   return (
     <Container>
       <SectionInputs>
-        <h1> Login </h1>
+        <Title> Login </Title>
         <Form
           onSubmit={login}
         >
@@ -59,22 +48,15 @@ function Login() {
             <Inputs
               id='password'
               name='password'
-              type={values ? "password" : "text"}
+              type='password'
               placeholder="Senha"
               value={form.password}
               onChange={onChange}
               required
               pattern='^.{3,}'
               title="Mínimo de 3 caracteres"
-
-
             />
-            <EyeIcon  
-              type="button"
-              icon={EyeOpen}
-              type={values ? "password" : "text"}
-              
-            />
+            
           </SectionPassword>
           <SectionsButtons>
             <Link to="/">

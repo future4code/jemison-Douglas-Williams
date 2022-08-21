@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container } from '../../GlobalStyled';
-import { ListTripSection, SectionsButtons, ButtonDel, Button } from './styled';
+import { Title, ListTripSection, SectionsButtons, ButtonDel, Button } from './styled';
 import Lixeira from '../../img/lixeira.png';
 import { Link } from 'react-router-dom';
 function AdminHouse() {
   return (
     <Container>
-        <h1>Área Administrativa</h1>
+        <Title>Área Administrativa</Title>
         <SectionsButtons>
           <Link to="/">
           <Button>Voltar</Button>
@@ -15,14 +15,15 @@ function AdminHouse() {
           <Button>Criar Viagem</Button>
           </Link>
           <Button>Sair</Button>
-          <ListTripSection>
+          
+        </SectionsButtons>
+        <ListTripSection>
             <span>Test</span>
             <ButtonDel>
             <img src={Lixeira} alt="ícone de lixeira" />
             </ButtonDel>
 
           </ListTripSection>
-        </SectionsButtons>
     </Container>
   );
 }

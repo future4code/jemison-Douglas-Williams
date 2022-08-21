@@ -20,14 +20,33 @@ export const ListTripSection = styled.div`
 
 `
 
-export const ListTripsSectionButtons = styled.div`
+export const ListTripsSectionButtons = styled.section`
     display: flex;
     justify-content: space-around;
     margin-top: 3vh;
 `
 
 export const ListTripsTitle = styled.h1`
+    margin-top: 2vh;
 
+    @media (max-width: 750px) {
+        font-size: 8vh;
+    }
+    @media (max-width: 600px) {
+        font-size: 6vh;
+    }
+    @media (max-width: 500px) {
+        font-size: 5vh;
+    }
+    @media (max-width: 400px) {
+        font-size: 4vh;
+    }
+    @media (max-width: 320px) {
+        font-size: 3vh;
+    }
+    @media (max-width: 280px) {
+        font-size: 2.5vh;
+    }
 `
 
 export const ListTripsButton = styled.button`
@@ -35,34 +54,3 @@ export const ListTripsButton = styled.button`
     align-items: center;
 `
 
-export const LabelTrips = styled.span`
-
-`
-
-export const InfoTrips = styled.p`
-
-`
-
-export const TripContainer = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 550px;
-    height: 250px;
-    box-shadow: 5px 5px 6px 4px #A6A6A6;
-    margin: 20px;
-
-    p {
-        color: #62707F;
-        font-size: 1.2em;
-        font-weight: 600;
-        padding: 0 25px;
-        text-align: center;
-    }
-
-    span {
-        line-height: 1.5;
-        font-weight: 500;
-        margin: 0 -20px;
-    }
-`
