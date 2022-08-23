@@ -18,6 +18,8 @@ export const Title = styled.h1`
     }
 `
 
+export const Select = styled.select``
+
 export const Button = styled.button`
     margin: 0 2vw;
     border-radius: 20px;

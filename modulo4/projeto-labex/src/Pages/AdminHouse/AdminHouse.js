@@ -1,29 +1,27 @@
 import React from 'react';
 import { Container } from '../../GlobalStyled';
-import { Title, ListTripSection, SectionsButtons, ButtonDel, Button } from './styled';
-import Lixeira from '../../img/lixeira.png';
+import { Title, SectionsButtons, Button } from './styled';
 import { Link } from 'react-router-dom';
+import { NameTripsAdminHouse } from '../../components/NameTrips/NameTripsAdminHouse';
+
+
 function AdminHouse() {
   return (
     <Container>
-        <Title>Área Administrativa</Title>
-        <SectionsButtons>
-          <Link to="/">
+      <Title>Área Administrativa</Title>
+      <SectionsButtons>
+        <Link to="/">
           <Button>Voltar</Button>
-          </Link>
-          <Link to="/CreateTrip">
+        </Link>
+        <Link to="/CreateTrip">
           <Button>Criar Viagem</Button>
-          </Link>
-          <Button>Sair</Button>
-          
-        </SectionsButtons>
-        <ListTripSection>
-            <span>Test</span>
-            <ButtonDel>
-            <img src={Lixeira} alt="ícone de lixeira" />
-            </ButtonDel>
+        </Link>
 
-          </ListTripSection>
+        <Link to="/login">
+        <Button>Sair</Button>
+        </Link>
+      </SectionsButtons>
+        <NameTripsAdminHouse />
     </Container>
   );
 }

@@ -8,7 +8,7 @@ function TripDetails() {
     <Container>
       <h1>Nome da Viagem</h1>
 
-      <Link to="">
+      <Link to="/AdminHouse">
         <Button> Voltar </Button>
       </Link>
 

@@ -19,7 +19,7 @@ function Login() {
         window.location.href = "/AdminHouse"
       }).catch(error => {
         console.log(error.response)
-
+        alert("Usuário não cadastrado, verificar login e senha")
       })
   }
 

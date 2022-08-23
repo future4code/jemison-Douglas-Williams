@@ -29,22 +29,7 @@ export const Title = styled.h1`
     }
 `
 
-export const ListTripSection = styled.section`
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-start;
-    margin: 0 auto;
-    width: 90%;
-    height: auto;
-    border: 2px solid var(--soft-dark);
 
-    span {
-        font-weight: bold;
-        margin-left: 1vw;
-    }
-
-`
 
 export const Button = styled.button`
     margin: 0 1vw 2vh ;
@@ -65,17 +50,4 @@ export const SectionsButtons = styled.section`
 
 `
 
-export const ButtonDel = styled.button`
-    margin: 0 1vw 0 auto;
-    background-color: transparent;
-    border: none;
-    width: 3vw;
 
-    @media (max-width: 600px) {
-        margin-right: 3vw;
-    }
-    @media (max-width: 400px) {
-        margin-right: 5vw;
-    }
-
-`

@@ -4,7 +4,7 @@ import { InfoTrips } from "../Trips/styled";
 import { ContainerSelect, OptionNameTrip } from "./styled";
 import { useRequestData } from "../../hooks/useRequestData";
 
-export function NameTrips() {
+export function NameTripsSelect() {
     const [data] = useRequestData(`${Base_url}trips`)
 
 

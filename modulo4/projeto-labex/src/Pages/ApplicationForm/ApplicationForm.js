@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Container } from "../../GlobalStyled"
 import { Button, Inputs, SectionsButtons, Form, Sections, Title } from './styled';
 import { Country } from "../../Mockup/Country"
-import { NameTrips } from "../../components/NameTrips/NameTrips";
+import { NameTripsSelect } from "../../components/NameTrips/NameTripsSelect";
 
 
 
@@ -25,7 +25,7 @@ function ApplicationForm() {
       onSubmit={""}
       >
         <Sections>
-          <NameTrips
+          <NameTripsSelect
           required
 
           />

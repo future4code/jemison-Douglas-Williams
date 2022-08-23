@@ -1,7 +1,7 @@
 export const Base_url = "https://us-central1-labenu-apis.cloudfunctions.net/labeX/douglas/";
 
-export const serviceHeaders = {
+export const HeadersCreateTrips = {
     headers: {
-      auth: "douglas-porto-jemison",
+      auth: localStorage.getItem('token'),
     }
   };
