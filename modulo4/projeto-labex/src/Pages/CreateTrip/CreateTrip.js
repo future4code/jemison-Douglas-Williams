@@ -7,11 +7,11 @@ import { Planet } from "../../Mockup/Planet";
 import { useProtectedPage } from "../../hooks/useProtectedPage";
 import { useForm } from "../../hooks/useForm"
 import axios from 'axios';
-import { Base_url, HeadersCreateTrips } from "../../constants/index"
+import { Base_url, headers } from "../../constants/index"
 
 function CreateTrip() {
   useProtectedPage();
-  const [form, onChange, clear] = useForm({
+  const {form, onChange, clear} = useForm({
     name: "", 
     planet: "",
     date: "",
@@ -19,21 +19,16 @@ function CreateTrip() {
     durationInDays: ""
   })
 
+  
+
   const createTrip = (e) => {
     e.preventDefault()
-
-    const body = {
-      name:form.name,
-      planet: form.planet,
-      date: form.date,
-      decription: form.description,
-      durationInDays: form.durationInDays
-    }
-    console.log(body)
-    axios.post(`${Base_url}/trips`, body, HeadersCreateTrips)
+  
+    axios.post(`${Base_url}trips`, form, headers)
     .then((response) => {
-      alert("Viagem cadastrada com sucesso")
       clear();
+      alert("Viagem cadastrada com sucesso")
+      console.log(response.data)
     }).catch((err) => {
       alert("Viagem não cadastrada")
       console.log(err)
@@ -42,12 +37,7 @@ function CreateTrip() {
 
   //Mapeamento do mock de dados para o formulário
   const planets = Planet.map((planet) => {
-    return (
-      <Select>
-        <option>Escolha um Planeta</option>
-        <option key={planet.index} value={planet.index}>{planet}</option>
-      </Select>
-    )
+    return <option key={planet.index} value={planet.index}>{planet}</option>
   })
 
 
@@ -57,11 +47,10 @@ function CreateTrip() {
     <Container>
       <Title>Criar Viagem</Title>
         <Form 
-        onSubmit={""}
+        onSubmit={createTrip}
         >
           <Sections>
           <Inputs 
-          id='name'
           type="text" 
           name="name"
           value={form.name}
@@ -73,18 +62,15 @@ function CreateTrip() {
           />
 
           <Select
-          id='planets'
-          name='planets'
-          type='select'
+          name="planet"
           value={form.planet}
           onChange={onChange}
-          required>
-            
+          required
+          >
+            <option value="" disabled selected>Selecione um planeta</option>
             {planets}
           </Select>
-
           <Inputs
-          id='date' 
           name='date'
           type="date"
           value={form.date}
@@ -94,7 +80,6 @@ function CreateTrip() {
           
           />
           <Inputs 
-          id='description'
           name='description'
           type="text" 
           placeholder="Descrição"
@@ -105,8 +90,7 @@ function CreateTrip() {
           title="Mínimo de 20 caracteres"
           />
           <Inputs 
-          id='number'
-          name='number'
+          name='durationInDays'
           type="number" 
           placeholder="Duração em anos" 
           value={form.durationInDays}
@@ -115,17 +99,17 @@ function CreateTrip() {
           />
       </Sections>
       <SectionButtons>
+
+        <Button type="submit">Criar</Button>
+
+      </SectionButtons>
+
+          </Form>
         <Link to="/AdminHouse">
           <Button
           type="button"
           >Voltar</Button>
         </Link>
-
-        <Button>Criar</Button>
-
-      </SectionButtons>
-
-          </Form>
 
     </Container>
   );

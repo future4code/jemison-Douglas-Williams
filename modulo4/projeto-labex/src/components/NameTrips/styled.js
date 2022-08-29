@@ -19,7 +19,7 @@ export const ListTripSection = styled.section`
     flex-direction: row;
     justify-content: flex-start;
     margin: 2vh auto;
-    width: 60vw;
+    width: 500px;
     height: 5vh;
     border: 2px solid var(--soft-dark);
 
@@ -30,20 +30,14 @@ export const ListTripSection = styled.section`
 
     }
 
-    .link {
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        margin-left: 2vw;
-
-        :hover {
-            transform: scale(1.1);
-        }
-
-        :active {
-            transform: scale(1.0);
-
-        }
+    @media (max-width: 550px) {
+        width: 400px;
+    }
+    @media (max-width: 450px) {
+        width: 300px;
+    }
+    @media (max-width: 350px) {
+        width: 250px;
     }
 
 `
@@ -62,4 +56,21 @@ export const ButtonDel = styled.button`
         margin-right: 5vw;
     }
 
+`
+export const Button = styled.button`
+        background-color: transparent;
+        border: none;
+        font-weight: bold;
+        color: black;
+        margin-left: 2vw;
+        width: auto;
+
+        :hover {
+            transform: scale(1.1);
+        }
+
+        :active {
+            transform: scale(1.0);
+
+        }
 `

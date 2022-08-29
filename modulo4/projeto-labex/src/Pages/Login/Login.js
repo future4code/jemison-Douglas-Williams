@@ -1,15 +1,20 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { Link, useNavigate } from 'react-router-dom';
 import { Title, Button, Inputs, SectionsButtons, SectionInputs, SectionPassword, Container } from "./styled";
 import { Form } from "../ApplicationForm/styled"
 import axios from 'axios';
-import { Base_url, serviceHeaders } from '../../constants';
+import { Base_url } from '../../constants';
 import { useForm } from "../../hooks/useForm";
 
 
 function Login() {
-  const [form, onChange] = useForm({ email: "", password: "" })
+  const {form, onChange} = useForm({ email: "", password: "" })
 
+  const navigate = useNavigate()
+
+  const goToBack = (e) => {
+    navigate(-1)
+  }
 
   const login = (e) => {
     e.preventDefault() //evita que a página seja renderizada novamente ao enviar o formulário

@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 
 
 export const useProtectedPage = () => {
@@ -9,7 +9,7 @@ export const useProtectedPage = () => {
     useEffect(()=> {
         const token = localStorage.getItem("token");
         if(!token) {
-            navigate("/login");
+            <Link to="/login" />
         }
-    }, [navigate])
+    }, [])
 }

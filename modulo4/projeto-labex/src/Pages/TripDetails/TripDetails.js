@@ -1,9 +1,15 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { Container, Section } from '../../GlobalStyled';
 import { Button, ItemsList, List } from "./styled";
+import {useProtectedPage} from "../../hooks/useProtectedPage"
 
 function TripDetails() {
+  useProtectedPage()
+
+  const navigate = useParams("id")
+  
+
   return (
     <Container>
       <h1>Nome da Viagem</h1>
