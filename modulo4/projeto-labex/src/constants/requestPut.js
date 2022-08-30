@@ -1,8 +1,8 @@
 import axios from "axios"
 
-import {BASE_URL} from "../constants/urls"
+import {Base_url} from "./index"
 
-export const decideCandidate = (id, candidateId, booleano, getTripsDetail) => {
+export const decideCandidate = (id, candidateId, booleano) => {
     const header = {
         headers: {
             auth: localStorage.getItem("token")
@@ -13,7 +13,7 @@ export const decideCandidate = (id, candidateId, booleano, getTripsDetail) => {
         approve: booleano,
     };
 
-    axios.put(`${BASE_URL}/trips/${id}/candidates/${candidateId}/decide`,
+    axios.put(`${Base_url}trips/${id}/candidates/${candidateId}/decide`,
         body,
         header
     )
@@ -23,7 +23,6 @@ export const decideCandidate = (id, candidateId, booleano, getTripsDetail) => {
             window.confirm("Deseja realmente Aprovar esse candidato?")
             : window.confirm("Deseja realmente excluir esse candidato?")
 
-            getTripsDetail();
         })
         .catch((err) => {
             alert(err.message);
