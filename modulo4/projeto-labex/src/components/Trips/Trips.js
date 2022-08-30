@@ -8,7 +8,7 @@ import { InfoTrips, LabelTrips, TripContainer } from "./styled";
 export function Trips() {
     const [data, isLoading, error] = useRequestData(`${Base_url}trips`)
     
-    const listTrips = data && data.trips && data.trips.map((trip, key) => {
+    const listTrips = data && data.trips && data.trips.map((trip) => {
         return (
             <ListTripSection key={trip.id}>
                 <TripContainer>
