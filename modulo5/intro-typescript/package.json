@@ -9,6 +9,8 @@
     "exercicio3": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio3.js",
     "exercicio4": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio4.js",
     "exercicio5": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio5.js",
+    "exercicio6": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio6.js",
+    
     "start": "echo Transpilando... && tsc && echo Executando...&& node ./build/index.js"
   },
   "author": "Douglas Porto",

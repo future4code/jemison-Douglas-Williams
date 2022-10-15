@@ -1,8 +1,8 @@
 
 
 function checaRenovacaoRG(anoAtual: number, anoNascimento: number, anoEmissao: number ) {
-    let idade = anoAtual - anoNascimento
-    let tempoCarteira = anoAtual - anoEmissao
+    let idade: number = anoAtual - anoNascimento
+    let tempoCarteira: number = anoAtual - anoEmissao
    
      if(idade <= 20 ) {
          return tempoCarteira >= 5 ? "passou dos 5 anos precisa renovar" : "ainda não passou os 5 anos"
@@ -18,3 +18,5 @@ function checaRenovacaoRG(anoAtual: number, anoNascimento: number, anoEmissao: n
        }
    }
    
+   console.log(checaRenovacaoRG(2022, 1991, 2010))
+   console.log(checaRenovacaoRG(2022, 2005, 2014))
