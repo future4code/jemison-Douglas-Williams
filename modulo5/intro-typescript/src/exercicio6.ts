@@ -1,7 +1,7 @@
 
-let operacao = process.argv[2]
-let num1 = process.argv[3]
-let num2 = process.argv[4]
+let operacao
+let num1
+let num2 
 
 
 function operacoes(operacao: string, num1: number, num2: number) {
