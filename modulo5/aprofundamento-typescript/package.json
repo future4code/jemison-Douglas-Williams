@@ -1,0 +1,27 @@
+{
+  "name": "aprofundamento-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo T... && tsc && echo E... && node ./build/index.js",
+    "exercicio1": "echo T... && tsc && echo E... && node ./build/exercicio1.js",
+    "exercicio2": "echo T... && tsc && echo E... && node ./build/exercicio2.js",
+    "exercicio3": "echo T... && tsc && echo E... && node ./build/exercicio3.js",
+    "exercicio4": "echo T... && tsc && echo E... && node ./build/exercicio4.js",
+    "exercicio5": "echo T... && tsc && echo E... && node ./build/exercicio5.js",
+    "exercicio6": "echo T... && tsc && echo E... && node ./build/exercicio6.js",
+    "exercicio7": "echo T... && tsc && echo E... && node ./build/exercicio7.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Douglas Werner",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^18.11.2",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
