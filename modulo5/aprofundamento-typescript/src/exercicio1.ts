@@ -6,28 +6,42 @@
     //Para que a variavel aceite strings, deve-se usar o Union Type. | (pipe)
     const meuNumero: number | string = "10";
 
+// d)
+enum CoresArcoIris {
+    AZUL = "Azul",
+    VERMELHO = "Vermelho",
+    VERDE = "Verde",
+    AMARELO = "Amarelo",
+    LARANJA = "Laranja",
+    ANIL = "Anil",
+    VIOLETA = "Violeta"
+
+}
+
 // c) 
     type Pessoa = {
         nome: string,
         idade: number,
-        corFavorita: string
+        corFavorita: CoresArcoIris
     }
 
     const pessoa1: Pessoa = {
         nome: "Douglas",
         idade: 31,
-        corFavorita: "Azul"
+        corFavorita: CoresArcoIris.AZUL,
     }
 
     const pessoa2: Pessoa = {
         nome: "Marjorye",
         idade: 19,
-        corFavorita: "Vermelho"
+        corFavorita: CoresArcoIris.VERMELHO,
     }
 
     const pessoa3: Pessoa = {
         nome: "Ursinho",
-        idade: ,
-        corFavorita: "Verde"
+        idade: 1,
+        corFavorita: CoresArcoIris.AMARELO
     }
 
+  
+   
