@@ -40,6 +40,18 @@ app.get("/posts", (req:Request, res:Response) => {
     res.send(posts)
 })
 
+// Exercicio 8
+// Get Post
+app.get("/post/:id", (req:Request, res:Response) => {
+    const id = req.params.id
+    const post = posts.find(post => post.id === Number(id))
+    if(post){
+        res.statusCode = 200
+        res.send(post)
+    }
+    res.send(post)
+})
+
 
 app.listen(3003, () => {
     console.log("Server is running in http://localhost:3003");
