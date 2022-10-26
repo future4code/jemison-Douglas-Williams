@@ -1,5 +1,5 @@
 import express, {Request, Response} from "express"
-import  { users } from "./data.js"
+import  { users, posts } from "./data.js"
 
 import cors from 'cors'
 
@@ -32,6 +32,14 @@ app.get("/user/:id",(req:Request, res:Response) => {
     res.send(user)
 
 })
+
+// Ecercício 7
+//Get Posts
+app.get("/posts", (req:Request, res:Response) => {
+    res.statusCode = 200
+    res.send(posts)
+})
+
 
 app.listen(3003, () => {
     console.log("Server is running in http://localhost:3003");
