@@ -12,17 +12,17 @@ export const users: DadosUsers[] = [
     },
     {
         id: 2,
-        nome: 'Jamilly Rafaela',
+        nome: 'Jair Messias',
         phone: 222222222,
-        email: 'jamillyrafaela@gmail.com',
-        website: 'jamilly.net'
+        email: 'bolsonaro22@gmail.com',
+        website: 'jair.info'
     },
     {
         id: 3,
-        nome: 'Jair Messias',
+        nome: 'Jamilly Rafaela',
         phone: 333333333,
-        email: 'bolsonaro22@gmail.com',
-        website: 'jair.info'
+        email: 'jamillyrafaela@gmail.com',
+        website: 'jamilly.net'
     },
     {
         id: 4,
