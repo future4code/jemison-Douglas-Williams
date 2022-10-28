@@ -1,0 +1,23 @@
+{
+  "name": "lista-typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "echo Transpilando... && tsc && echo Executando... && node ./build/index.js",
+    "exercicio1": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio1.js",
+    "exercicio2": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio2.js",
+    "exercicio3": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio3.js",
+    "exercicio4": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio4.js",
+    "exercicio5": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio5.js",
+    "exercicio6": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio6.js",
+    "exercicio7": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio7.js",
+    "exercicio8": "echo Transpilando... && tsc && echo Executando... && node ./build/exercicio8.js"
+  },
+  "keywords": [],
+  "author": "Douglas Werner",
+  "license": "ISC",
+  "dependencies": {
+    "typescript": "^4.8.4"
+  }
+}
