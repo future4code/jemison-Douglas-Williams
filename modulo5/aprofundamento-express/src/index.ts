@@ -19,3 +19,16 @@ app.get("/afazeres", (req: Request, res: Response) => {
 })
 
 // Exercício 5 - Endpoint que cria um novo afazer
+app.post("/novoafazer", (req: Request, res: Response) => {
+    const novoAfazer = req.body
+    const usuarioAutorizado = req.headers.authorization
+
+    if(!novoAfazer || !usuarioAutorizado) {
+        res.status(400).send("Requisição inválida / Usuário não autorizado")
+    }
+    afazeres.push(novoAfazer)
+    res.status(200).send("Afazer criado com sucesso!")
+
+})
+
+//
