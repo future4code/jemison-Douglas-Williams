@@ -1,6 +1,5 @@
 import express, { Response, Request } from "express"
-import {afazeres} from "./data"
-import express from "express"
+import { afazeres } from "./data"
 
 import cors from 'cors'
 
@@ -15,7 +14,7 @@ app.listen(3003, () => {
 });
 
 // Exercicio 4 - Endpoint que retorna todos os Afazeres
-app.get("/afazeres", (res: Response, req: Request) => {
+app.get("/afazeres", (req: Request, res: Response) => {
     res.status(200).send(afazeres)
 })
 
