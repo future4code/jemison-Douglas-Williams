@@ -1,4 +1,5 @@
-import express from "express"
+import express, { Response, Request } from "express"
+import {afazeres} from "./data"
 
 import cors from "cors"
 
@@ -12,3 +13,13 @@ app.listen(3003, () => {
     console.log("Server is running in http://localhost:3003")
 })
 
+// Exercicio 4 - Endpoint que retorna todos os Afazeres
+app.get("/afazeres", (res: Response, req: Request) => {
+    res.status(200).send(afazeres)
+})
+
+// Exercício 5 - Endpoint que cria um novo afazer
+app.post("/novoafazer",(res:Response, req:Request) => {
+    const body = res.json
+    
+})
