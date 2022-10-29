@@ -27,7 +27,7 @@ app.post("/novoafazer", (req: Request, res: Response) => {
         res.status(400).send("Requisição inválida / Usuário não autorizado")
     }
     afazeres.push(novoAfazer)
-    res.status(200).send("Afazer criado com sucesso!")
+    res.status(200).send(afazeres)
 
 })
 
