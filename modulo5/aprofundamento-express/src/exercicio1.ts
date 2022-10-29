@@ -14,7 +14,7 @@ app.listen(3003, () => {
 })
 
 app.get("/ping", (req: Request, res: Response) => {
-    res.status(200).send("pong")
+    res.status(200).send("Pong! 🏓")
 })
 
 
