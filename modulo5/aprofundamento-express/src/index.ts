@@ -67,11 +67,22 @@ app.put("/editarafazer/:id", (req: Request, res: Response) => {
 // Exercício 7 - Endpoint que deleta um afazer
 app.delete("/delafazer/:id", (req:Request, res:Response) => {
     const id = req.params.id
-    const usuarioAutorizado = req.headers.authorization?.toLowerCase()
     const del = afazeres.find(afazer => afazer.id === Number(id))
-    if(!del && usuarioAutorizado !== users){
-        res.status(401).send("Tarefa não deletada, verificar id")
-    }
-        afazeres.splice(Number(del), 1)
+    if(del){
+        afazeres.splice(afazeres.indexOf(del), 1)
         res.status(200).send(afazeres)
+    }
+    res.status(404).send("Afazer não encontrado, verificar id")
 })
+
+// Exercício 8 - Endpoint que retorna todos os afazeres através do id de usuário
+app.get("/afazeres/:id", (req: Request, res: Response) => {
+    const id = req.params.id
+    const afazer = afazeres.filter((afazer) => afazer.userId === Number(id))
+    if (afazer) {
+        res.status(200).send(afazer)
+    }
+    res.status(404).send("Afazer não encontrado, verificar id")
+    
+})
+
