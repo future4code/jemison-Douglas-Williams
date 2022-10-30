@@ -92,4 +92,3 @@ app.get("/afazeres/:id", (req: Request, res: Response) => {
     res.status(404).send("Afazer não encontrado, verificar id")
     
 })
-
