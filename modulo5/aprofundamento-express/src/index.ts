@@ -80,7 +80,14 @@ app.get("/afazeres/:id", (req: Request, res: Response) => {
     const id = req.params.id
     const afazer = afazeres.filter((afazer) => afazer.userId === Number(id))
     if (afazer) {
-        res.status(200).send(afazer)
+        res.status(200).send(
+            {
+                todos: {
+                    SelectedUser: [afazer],
+                    others: [afazeres.filter((afazer) => afazer.userId !== Number(id))]
+                }
+            }
+        )
     }
     res.status(404).send("Afazer não encontrado, verificar id")
     
