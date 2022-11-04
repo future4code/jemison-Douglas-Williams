@@ -1,4 +1,4 @@
-import { User } from './type'
+import { User, UserType } from './type'
 
 
 export const users: User[] = [
@@ -6,42 +6,42 @@ export const users: User[] = [
         id: 1,
         name: "Alice",
         email: "alice@email.com",
-        type: "ADMIN",
+        type: UserType.ADMIN,
         age: 12
     },
     {
         id: 2,
         name: "Bob",
         email: "bob@email.com",
-        type: "NORMAL",
+        type: UserType.NORMAL,
         age: 36
     },
     {
         id: 3,
         name: "Coragem",
         email: "coragem@email.com",
-        type: "NORMAL",
+        type: UserType.NORMAL,
         age: 21
     },
     {
         id: 4,
         name: "Dory",
         email: "dory@email.com",
-        type: "NORMAL",
+        type: UserType.ADMIN,   
         age: 17
     },
     {
         id: 5,
         name: "Elsa",
         email: "elsa@email.com",
-        type: "ADMIN",
+        type: UserType.NORMAL,
         age: 17
     },
     {
         id: 6,
         name: "Fred",
         email: "fred@email.com",
-        type: "ADMIN",
+        type: UserType.ADMIN,
         age: 60
     }
 ]
