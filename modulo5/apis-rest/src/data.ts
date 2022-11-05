@@ -1,7 +1,7 @@
 import { User, UserType } from './type'
 
 
-export const users: User[] = [
+export const dataUsers: User[] = [
     {
         id: 1,
         name: "Alice",

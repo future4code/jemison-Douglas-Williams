@@ -1,6 +1,6 @@
 import express, { Request, Response } from 'express';
 import cors from 'cors';
-// import { data } from './data';
+import { dataUsers } from './data';
 
 
 
@@ -9,7 +9,20 @@ app.use(cors());
 app.use(express.json());
 
 
-
+app.get("/users", (req: Request, res: Response) => {
+    let ErrorCode: number = 400;
+    try {
+        const users = dataUsers.map(user => ({
+            id: user.id,
+            name: user.name,
+            email: user.email,
+            type: user.type
+        }))
+        res.status(200).send(users);
+    } catch (error) {
+        res.status(ErrorCode).send("Requisição inválida, verifique o link utilizado");
+    }
+});
 
 
 
