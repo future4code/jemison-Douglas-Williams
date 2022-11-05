@@ -24,6 +24,19 @@ app.get("/users", (req: Request, res: Response) => {
     }
 });
 
+app.get("/?type", (req: Request, res: Response) => {
+    let ErrorCode: number = 400;
+    try {
+        const type = req.query.type as string;
+        const usersType = dataUsers.filter(user => user.type === type);
+        if (usersType) {
+            res.status(200).send(usersType);
+        }
+    } catch (error) {
+        res.status(ErrorCode).send("Requisição inválida, verifique o link utilizado e o query param utilizado");
+    }
+});
+
 
 
 

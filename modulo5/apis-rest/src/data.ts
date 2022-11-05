@@ -1,5 +1,9 @@
 import { User, UserType } from './type'
 
+// Exercício 1
+// a) O método GET que é utilizado para buscar informações de um servidor.
+// b) Sim, usando o enum UserType. (No arquivo types.ts)
+
 
 export const dataUsers: User[] = [
     {
