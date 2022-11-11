@@ -60,16 +60,16 @@ d) SELECT * FROM Actor WHERE (name LIKE "%g%" OR name LIKE "%G%") AND (name LIKE
     Retornou os atores que tem a letra g ou G em seu nome e a letra a ou A em seu nome e que tem salario entre 350000 e 900000
 
 ### Exercício 5
-a) CREATE TABLE Movies (
-    id VARCHAR(255) PRIMARY KEY,
-    name VARCHAR(255) NOT NULL,
-    sinopse TEXT NOT NULL,
-    release_date DATE NOT NULL,
+a)CREATE TABLE Movie (
+	id VARCHAR(255) PRIMARY KEY,
+    title VARCHAR(255) NOT NULL UNIQUE,
+    synopsis TEXT NOT NULL,
+    release_Date DATE NOT NULL,
     rating INT NOT NULL
 );
    Text é um tipo de dado que pode ser usado para armazenar textos longos.
 
-b) INSERT INTO Movies (id, name, sinopse, release_date, rating)
+b)INSERT INTO Movie (id, title, synopsis, release_date, rating)
     VALUES(
         "001",
         "Se Eu Fosse Você",
@@ -78,7 +78,7 @@ b) INSERT INTO Movies (id, name, sinopse, release_date, rating)
         7
     );
 
-c) INSERT INTO Movies (id, name, sinopse, release_date, rating)
+c) INSERT INTO Movie (id, title, synopsis, release_date, rating)
     VALUES(
         "002",
         "Doce de mãe",
@@ -87,7 +87,7 @@ c) INSERT INTO Movies (id, name, sinopse, release_date, rating)
         10
     );
 
-d) INSERT INTO Movies (id, name, sinopse, release_date, rating)
+d)INSERT INTO Movie (id, title, synopsis, release_date, rating)
     VALUES(
         "003",
         "Dona Flor e Seus Dois Maridos",
