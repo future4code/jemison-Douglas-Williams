@@ -7,6 +7,10 @@ export class Product {
         this.name = name
         this.price = price
     }
+
+    public newProduct(): void{
+        console.log(`O novo Produto ${this.name}, custa ${this.price}`)
+    }
 }
 
 // public, private, protected são modificadores de acesso

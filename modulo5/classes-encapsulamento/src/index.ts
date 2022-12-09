@@ -8,6 +8,7 @@ import { createProduct } from './endpoints/createProduct'
 import { getProducts } from './endpoints/getProducts'
 import { createPurchase } from './endpoints/createPurchase'
 import { getUserPurchases } from './endpoints/getUserPurchases'
+import { Product } from './models/Product'
 
 dotenv.config()
 const app = express()
@@ -15,9 +16,6 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-app.listen(process.env.PORT || 3003, () => {
-  console.log(`Servidor rodando na porta ${process.env.PORT || 3003}`)
-})
 
 app.get("/ping", ping)
 
@@ -38,3 +36,18 @@ app.post("/purchases", createPurchase)
 
 // Exercício 6 - Get user purchases
 app.get("/users/:id/purchases", getUserPurchases)
+
+
+
+const product1 = new Product("1", "Abacaxi", 2)
+
+console.log(product1.newProduct())
+
+
+
+app.listen(process.env.PORT || 3003, () => {
+  console.log(`Servidor rodando na porta ${process.env.PORT || 3003}`)
+})
+
+
+
