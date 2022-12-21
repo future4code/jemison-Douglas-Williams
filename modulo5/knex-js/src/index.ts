@@ -87,26 +87,62 @@ app.get("/actorbygender", async (req: Request, res: Response) => {
 
 // 2º Exercício
 // a)
+
+// Função faz a troca de salário de um dos atores usando o método raw
 const updateSalary = async (id: string, salary: number): Promise<any> => {
-    await connection("Actor")
-        .update({ salary: salary})
-        .where("id", id)
+    const result = await connection.raw(`
+        UPDATE Actor
+        SET salary = ${salary}
+        WHERE id = "${id}"
+    `)
+
+
+// Função abaixo faz a mesma coisa que a função acima, porém usando query builders.
+        // await connection("Actor")
+        // .update({ salary: salary})
+        // .where("id", id)
 }
 
+// Função adiciona um novo valor ao salario de um ator selecionado pelo id
+const addSalary = async (id: string, salary: number): Promise<any> => {
+    const result = await connection.raw(`
+    UPDATE Actor 
+    SET ${salary} = ${salary + 600000} 
+    WHERE id = "${id}";
+    `)
+}
+
+// Função retorna um ator pelo id com o método raw
 const getActorById = async (id: string): Promise<any> => {
-    const result = await connection("Actor")
-        .select("*")
-        .where("id", id)
+    const result = await connection.raw(`
+        SELECT * FROM Actor WHERE id = "${id}"
+        `)
+
     return result[0][0]
 }
 
-// Para testar a função, descomente as linhas abaixo e rode o código!
+// Para testar as funções acima, descomente as linhas abaixo e rode o código!
 
-// updateSalary("001", 500000)
-//     .then(() => {
-//         console.log("O salario do ator foi atualizado com sucesso!")
-//     })
+// Função para pegar ator pelo id
+getActorById("002")
+    .then(result => {
+        console.log(result)
+    })
+    
 
+// Função para mudar o salário de um ator
+updateSalary("001", 500000)
+    .then(() => {
+        console.log("O salario do ator foi atualizado com sucesso!")
+    })
+
+// Função para adicionar um valor ao salário de um ator
+addSalary("001", 500000)
+    .then(() => {
+        console.log("O salario do ator foi atualizado com sucesso!")
+    })
+
+// b)
 
 
 
