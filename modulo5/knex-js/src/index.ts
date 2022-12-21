@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors())
 
 
-// a) A resposta do raw vai re
+// a) A resposta do raw vai retornar o primeiro ator
 
 
 // b)
@@ -57,19 +57,21 @@ const getActorByGender = async (gender: string): Promise<any> => {
     `);
       // Só colocamos esse "as count" como apelido, para ficar mais fácil de pegar
       // o valor no resultado!
-    const count = result[0][0].count;
+    const count = `{
+        The total number of ${gender} actors is: ${result[0][0].count}
+    }`;
     return count;
   };
 
 // Para testar a função, descomente as linhas abaixo e rode o código!
 
-getActorByGender('female')
-    .then(count => {
-        console.log(count)
-})
+// getActorByGender('female')
+//     .then(count => {
+//         console.log(count)
+// })
 
 // Requisição para solicitar o ator pelo gênero
-app.get("actorbygender", async (req: Request, res: Response) => {
+app.get("/actorbygender", async (req: Request, res: Response) => {
     let errorCode = 400;
     try {
         const gender = getActorByGender(req.query.gender as string);
