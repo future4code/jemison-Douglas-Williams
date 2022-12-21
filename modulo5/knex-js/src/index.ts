@@ -93,6 +93,20 @@ const updateSalary = async (id: string, salary: number): Promise<any> => {
         .where("id", id)
 }
 
+const getActorById = async (id: string): Promise<any> => {
+    const result = await connection("Actor")
+        .select("*")
+        .where("id", id)
+    return result[0][0]
+}
+
+// Para testar a função, descomente as linhas abaixo e rode o código!
+
+// updateSalary("001", 500000)
+//     .then(() => {
+//         console.log("O salario do ator foi atualizado com sucesso!")
+//     })
+
 
 
 
