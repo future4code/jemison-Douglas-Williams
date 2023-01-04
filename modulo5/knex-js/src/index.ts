@@ -13,7 +13,6 @@ app.use(cors())
 
 // a) A resposta do raw vai retornar o primeiro ator
 
-
 // b)
 // função retorna um array de atores que contenham no nome a letra ou palavra passado como parâmetro
 const getActorByName = async (name: string): Promise<any> => {
@@ -27,11 +26,11 @@ const getActorByName = async (name: string): Promise<any> => {
 }
 
 // Para testar a função, descomente as linhas abaixo e rode o código!
-
-// getActorByName("G").then(result => {
-//     console.log(result)
-// })
-
+/*
+getActorByName("G").then(result => {
+    console.log(result)
+})
+*/
 
 //Requisição para pegar ator pelo nome
 app.get("/actorbyname", async (req: Request, res: Response) => {
@@ -64,11 +63,12 @@ const getActorByGender = async (gender: string): Promise<any> => {
   };
 
 // Para testar a função, descomente as linhas abaixo e rode o código!
-
-// getActorByGender('female')
-//     .then(count => {
-//         console.log(count)
-// })
+/*
+getActorByGender('female')
+    .then(count => {
+        console.log(count)
+})
+*/
 
 // Requisição para solicitar o ator pelo gênero
 app.get("/actorbygender", async (req: Request, res: Response) => {
@@ -107,7 +107,7 @@ const updateSalary = async (id: string, salary: number): Promise<any> => {
 const addSalary = async (id: string, salary: number): Promise<any> => {
     const result = await connection.raw(`
     UPDATE Actor 
-    SET ${salary} = ${salary + 600000} 
+    SET salary = ${salary + 600000} 
     WHERE id = "${id}";
     `)
 }
@@ -123,24 +123,27 @@ const getActorById = async (id: string): Promise<any> => {
 
 // Para testar as funções acima, descomente as linhas abaixo e rode o código!
 
+/*
 // Função para pegar ator pelo id
 getActorById("002")
     .then(result => {
         console.log(result)
     })
     
+// Função para mudar o salário de um ator pa maior
 
-// Função para mudar o salário de um ator
 updateSalary("001", 500000)
     .then(() => {
-        console.log("O salario do ator foi atualizado com sucesso!")
+        console.log("O salario do ator foi modificado com sucesso!")
     })
 
 // Função para adicionar um valor ao salário de um ator
+
 addSalary("001", 500000)
     .then(() => {
-        console.log("O salario do ator foi atualizado com sucesso!")
+        console.log("Foi adicionado o valor ao salário do ator com sucesso!")
     })
+*/
 
 // b)
 
