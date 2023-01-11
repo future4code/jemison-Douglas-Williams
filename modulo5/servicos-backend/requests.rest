@@ -1,0 +1,16 @@
+GET https://viacep.com.br/ws/88356088/json/
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/users/create
+Content-Type: application/json
+
+
+{
+  "name": "Douglas Werner",
+  "nickname": "douglasw",
+  "email": "douglaswerner10@gmail.com",
+  "zipcode": "88356088"
+}
+
