@@ -5,4 +5,4 @@ export const movieRouter = express.Router();
 
 const movieController = new MovieController();
 
-movieRouter.post("/create", movieController.createMovie);
+movieRouter.post("/createmovie", movieController.createMovie);

@@ -5,5 +5,5 @@ export const userRouter = express.Router()
 
 const userController = new UserController()
 
-userRouter.post("/create", userController.create)
-
+userRouter.post("/createuser", userController.createUser)
+userRouter.get("/allusers",  userController.getAllUser)

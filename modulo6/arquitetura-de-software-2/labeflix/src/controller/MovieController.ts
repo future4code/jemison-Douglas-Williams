@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { MovieBusiness } from "../business/MovieBusiness";
 
-
 export class MovieController {
     async createMovie(req: Request, res: Response): Promise<void> {
         try {

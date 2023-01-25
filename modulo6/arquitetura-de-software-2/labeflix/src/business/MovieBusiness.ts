@@ -2,9 +2,9 @@ import { v4 as generateId } from 'uuid'
 import { MovieDatabase } from '../data/MovieDatabase'
 
 export class MovieBusiness {
-    async createMovie({title, description, duration_in_minutes, year_of_release}: any): Promise<void> {
+    async createMovie({title, description, durationInMinute, yearOfRelease}: any): Promise<void> {
       
-      if(!title || !description || !duration_in_minutes || !year_of_release){
+      if(!title || !description || !durationInMinute || !yearOfRelease){
           throw new Error("Dados invalido (sid, title, description, duration_in_minutes, year_of_release")
       }  
       
@@ -16,8 +16,8 @@ export class MovieBusiness {
         id,
         title,
         description,
-        duration_in_minutes,
-        year_of_release
+        duration_in_minute: durationInMinute,
+        year_of_release: yearOfRelease
       })
     }
   }
