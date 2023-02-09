@@ -7,11 +7,11 @@ import {
   EditUserInput,
   LoginInputDTO,
 } from "../model/user";
-import { IdGenerator } from "../services/IdGenerator";
-import { TokenGenerator } from "../services/TokenGenerator";
+import { generateId } from "../services/generateId";
+import { GeneratorToken } from "../services/GeneratorToken";
 
-const idGenerator = new IdGenerator()
-const tokenGenerator = new TokenGenerator()
+const idGenerator = new generateId()
+const tokenGenerator = new GeneratorToken()
 const userDatabase = new UserDatabase();
 
 export class UserBusiness {

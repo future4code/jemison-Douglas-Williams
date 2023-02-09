@@ -29,8 +29,8 @@ export class UserDatabase extends BaseDatabase {
           password: user.password,
         })
         .into("Auth_users");
-    } catch (error: any) {
-      throw new CustomError(400, error.message);
+    } catch (err: any) {
+      throw new CustomError(err.statusCode, err.message);
     }
   };
 

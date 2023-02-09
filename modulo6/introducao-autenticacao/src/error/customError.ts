@@ -1,6 +1,12 @@
 export class CustomError extends Error {
-    constructor(statusCode: number, message: string){
+    constructor(public statusCode: number, public message: string){
         super(message)
+    }
+}
+
+export class NotFoundBody extends CustomError {
+    constructor(){
+        super(404, "Not found Body")
     }
 }
 
