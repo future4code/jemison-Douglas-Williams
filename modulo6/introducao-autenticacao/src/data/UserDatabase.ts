@@ -3,6 +3,7 @@ import { EditUserInput, user } from "../model/user";
 import { BaseDatabase } from "./BaseDatabase";
 
 export class UserDatabase extends BaseDatabase {
+
   public findUser = async (email: string) => {
     try {
   

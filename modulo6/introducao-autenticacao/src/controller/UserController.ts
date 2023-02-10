@@ -1,4 +1,3 @@
-import { UserDatabase} from './../data/UserDatabase';
 import { Request, Response } from "express";
 import { UserBusiness } from "../business/UserBusiness";
 import { EditUserInputDTO, LoginInputDTO, UserInputDTO } from "../model/user";
@@ -6,23 +5,6 @@ import { GeneratorToken } from '../services/GeneratorToken';
 import { CustomError, NotFoundBody } from '../error/customError';
 
 export class UserController {
-
-      public createUser = async (res: Response, req: Request) => {
-        try {
-          const input: UserInputDTO = {
-            name: req.body.name,
-            nickname: req.body.nickname,
-            email: req.body.email,
-            password: req.body.password
-          }
-
-          const userBusiness = await new UserBusiness().createUser(input);
-
-          res.status(201).send({ message: "Usuário Criado!" })
-        } catch (err: any) {
-          throw new CustomError(err.statusCode, err.message);
-        }
-      }
 
       public signup = async (req: Request, res: Response) => {
         try {
