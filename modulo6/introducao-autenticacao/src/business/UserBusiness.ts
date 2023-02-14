@@ -120,13 +120,23 @@ export class UserBusiness {
     }
   };
 
-  public getUserById = async(token:string)=>{
+  public getUserById = async(id:string)=>{
     try {
       const userDatabase = new UserDatabase()
-      const user = await userDatabase.getUserById(token);
+      const user = await userDatabase.getUserById(id);
       return user
     } catch (err:any) {
       throw new Error(err.message);
     }
-}
+  }
+
+  public getUserByEmail = async(email:string)=>{
+    try {
+      const userDatabase = new UserDatabase()
+      const user = await userDatabase.getUserByEmail(email);
+      return user
+    } catch (err:any) {
+      throw new Error(err.message);
+    }
+  }
 }

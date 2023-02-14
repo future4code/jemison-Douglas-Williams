@@ -64,30 +64,45 @@ export class UserController {
 
       public getUserById = async(req:Request,res:Response)=>{
         try {
-          const token = req.headers.authorization as string;
-      
-          const tokenGenerator = new GeneratorToken()
-          const authenticationData = tokenGenerator.tokenData(token);
+          const id = req.headers.authorization as string;
+
           const userBusiness = new UserBusiness()
-          const user = await userBusiness.getUserById(authenticationData.id);
+          const user = await userBusiness.getUserById(id);
       
           res.status(200).send({
             id: user.id,
-            email: user.email,
+            name: user.name,
+            nickname: user.nickname,
+            email: user.email
           });
         } catch (err:any) {
           res.status(400).send({
             message: err.message,
           });
         }
+        
 
       }
 
-    
-
+      public getUserByEmail = async(req:Request,res:Response)=>{
+        try {
+          const email = req.headers.authorization as string;
       
- 
+          const userBusiness = new UserBusiness()
+          const user = await userBusiness.getUserByEmail(email);
+      
+          res.status(200).send({
+            id: user.id,
+            name: user.name,
+            nickname: user.nickname,
+            email: user.email
+          });
+        } catch (err:any) {
+          res.status(400).send({
+            message: err.message,
+          });
+        }
+        
 
-
-
+      }
 }

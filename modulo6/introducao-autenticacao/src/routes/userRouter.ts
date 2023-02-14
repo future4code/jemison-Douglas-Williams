@@ -9,5 +9,5 @@ const userController = new UserController()
 userRouter.post('/signup', userController.signup)
 userRouter.post('/login', userController.login )
 userRouter.put('/edit/:id',userController.editUser )
-userRouter.get('/profile',userController.getUserById )
-
+userRouter.get('/profile/id',userController.getUserById )
+userRouter.get('/profile/email',userController.getUserByEmail)

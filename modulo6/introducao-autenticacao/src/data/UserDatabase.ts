@@ -54,5 +54,14 @@ export class UserDatabase extends BaseDatabase {
  
     return result[0];
    }
+
+   public getUserByEmail = async(email: string): Promise<any> => {
+    const result = await UserDatabase.connection
+      .select("*")
+      .from("Auth_users")
+      .where({ email });
+ 
+    return result[0];
+   }
  
 }
