@@ -1,4 +1,4 @@
-import { UserDatabase } from "../data/UserDatabase";
+import { UserDatabase } from "../controller/UserDatabase";
 import { CustomError, InvalidEmail, InvalidName, InvalidPassword, Unauthorized, UserNotFound } from "../error/customError";
 import {
   UserInputDTO,

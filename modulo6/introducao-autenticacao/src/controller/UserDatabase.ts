@@ -1,6 +1,6 @@
 import { CustomError } from "../error/customError";
 import { EditUserInput, user } from "../model/user";
-import { BaseDatabase } from "./BaseDatabase";
+import { BaseDatabase } from "../data/BaseDatabase";
 
 export class UserDatabase extends BaseDatabase {
 
