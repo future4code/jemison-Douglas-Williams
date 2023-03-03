@@ -13,7 +13,16 @@ describe("Test validateCharacter", () => {
         expect(result).toBe(false)
     })
 
-    test("Test 2: Should return false for empty life")
+    test("Test 2: Should return false for 0 life", () => {
+        const result = validateCharacter({
+            name: "Scorpion",
+            life: 0,
+            defense: 300,
+            strength: 600
+        })
+
+        expect(result).toBe(false)
+    })
 
 })
 
