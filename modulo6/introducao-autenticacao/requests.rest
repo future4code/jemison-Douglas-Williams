@@ -1,0 +1,40 @@
+
+POST http://localhost:3306/user/signup
+Content-Type: application/json
+
+{
+   "name": "Teste 2",
+   "nickname": "Teste2",
+   "email": "teste2@teste.com",
+   "password": "123456789"
+}
+###
+
+POST http://localhost:3306/user/login
+Content-Type: application/json
+
+{
+   "email": "teste2@teste.com",
+   "password": "123456789"
+}
+
+###
+PUT http://localhost:3306/user/edit/3a6678f3-8fb2-4c5a-8f5b-1e3b222ca503
+Content-Type: application/json
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjNhNjY3OGYzLThmYjItNGM1YS04ZjViLTFlM2IyMjJjYTUwMyIsImlhdCI6MTY3NjMzNjE1NSwiZXhwIjoxNjc2MzM3MDU1fQ.Zr6bgXkYiv4boGW3EjqJbCdcqWiUrBKOfqbW32j-KGc
+
+{
+   "name": "Douglas Werner",
+   "nickname": "Doug" 
+}
+
+###
+GET  http://localhost:3306/user/profile/id
+Content-Type: application/json
+Authorization: 3a6678f3-8fb2-4c5a-8f5b-1e3b222ca503
+
+### 
+GET http://localhost:3306/user/profile/email
+Content-Type: application/json
+Authorization: teste2@teste.com
+
