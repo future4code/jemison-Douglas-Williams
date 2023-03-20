@@ -1,0 +1,19 @@
+POST http://localhost:3003/user/createuser
+Content-Type: application/json
+
+{
+    "name": "teste",
+    "email": "email@email.com",
+    "password": "23432535"
+}
+
+###
+POST http://localhost:3003/createmovie
+Content-Type: application/json
+
+{
+    "title": "teste",
+    "description": "teste",
+    "duration_in_minutes": 120,
+    "year_of_release": "2013"
+}
