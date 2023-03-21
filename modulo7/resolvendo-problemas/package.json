@@ -1,0 +1,18 @@
+{
+  "name": "resolvendo-problemas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./build/index.js",
+    "dev": "ts-node-dev .src/index.ts"
+  },
+  "keywords": [],
+  "author": "Douglas Werner",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^18.15.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.0.2"
+  }
+}
